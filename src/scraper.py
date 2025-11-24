@@ -17,6 +17,7 @@ import re
 import pandas as pd
 import os
 import csv
+import unicodedata
 
 
 
@@ -44,6 +45,14 @@ class Scraper:
         self.driver = webdriver.Chrome(service=service, options=options)
         self.wait = WebDriverWait(self.driver, timeout)
         self.driver.implicitly_wait(implicit_wait)
+        self.SKIP_TITLES = {
+            self._norm("Sendero accesible del Cornato en valle de Pineta"),
+            self._norm("Sendero adaptado de la Pradera de Ordesa"),
+            self._norm("Itinerario adaptado del puente de la Gorga"),
+            self._norm("Itinerario adaptado al lago de Sant Maurici"),
+            self._norm("Itinerario adaptado hasta el mirador del Cap del Ras"),
+            self._norm("Itinerario adaptado hasta el mirador de Els Orris"),
+        }
         print("Navegador iniciado")
 
     def start(self, url: str):
@@ -147,9 +156,9 @@ class Scraper:
                 if write_header:
                     writer.writeheader()
                 writer.writerow(route_data)
-            print(f"✅ Ruta guardada en CSV: {csv_path}")
+            print(f"Ruta guardada en CSV: {csv_path}")
         except Exception as e:
-            print(f"⚠️ Error al guardar CSV: {e}")
+            print(f"Error al guardar CSV: {e}")
 
     def get_location_info(self) -> dict:
         location = {
@@ -199,7 +208,7 @@ class Scraper:
                         location["pais"] = text
 
         except Exception as e:
-            print(f"⚠️ Error extrayendo información de localización: {e}")
+            print(f"Error extrayendo información de localización: {e}")
 
         return location
 
@@ -344,6 +353,22 @@ class Scraper:
             return False
     
     
+    def _norm(self, s: str) -> str:
+        """Normaliza un título: quita acentos, puntuación, espacios extras y pasa a minúsculas."""
+        if not s:
+            return ""
+        s = unicodedata.normalize("NFKD", s)
+        s = "".join(ch for ch in s if not unicodedata.combining(ch))
+        s = s.lower()
+        s = re.sub(r"[^\w\s]", "", s)      # quitar puntuación
+        s = re.sub(r"\s+", " ", s).strip() # colapsar espacios
+        return s
+    
+    def should_skip(self, raw_title: str) -> bool:
+        t = self._norm(raw_title)
+        if t in self.SKIP_TITLES:
+            return True
+        return False
 
     def go_to_region_by_name(self, region_name: str, delay_between_actions: float = 1.0):
         """
@@ -362,6 +387,15 @@ class Scraper:
 
             zones_xpath = f"{xpath_heading}/following::a[contains(@class,'link_rojo_14_underline')]"
             zone_elements = self.driver.find_elements(By.XPATH, zones_xpath)
+            
+            print(f"Buscando zonas en la región '{region_name}'...")
+            print(f"Se encontraron {len(zone_elements)} zonas:")
+
+            for idx, zone in enumerate(zone_elements, start=1):
+                zone_text = zone.text.strip()
+                zone_href = zone.get_attribute("href")
+                print(f" {zone_href}")
+            
             if not zone_elements:
                 print(f"No se encontraron zonas para la región '{region_name}'")
                 return
@@ -398,6 +432,14 @@ class Scraper:
                         break
                     route_el = route_elements[ri]
                     route_title = route_el.text.strip()
+                    norm_title = self._norm(route_title)
+                    # Si el título normalizado está en la lista de skip, saltar sin abrir la ruta
+
+                    if self.should_skip(route_title):
+                        print(f"[SKIP] {route_title}")
+                        ri += 1
+                        continue
+
                     print(f"    Abriendo ruta {ri+1}/{len(route_elements)}: {route_title}")
 
                     self._click(route_el)
@@ -413,16 +455,16 @@ class Scraper:
                     if pdf_btn:
                         ok = self.download_pdf(pdf_btn)
                         if not ok:
-                            print("    Falló la descarga del PDF para:", route_title)
+                            print("Falló la descarga del PDF para:", route_title)
                     else:
-                        print("    Botón PDF no encontrado para la ruta:", route_title)
+                        print("Botón PDF no encontrado para la ruta:", route_title)
 
                     # volver atrás a la página de la zona para seguir con la siguiente ruta
                     try:
                         self.driver.back()
                         time.sleep(0.5)
                     except Exception as e:
-                        print("    Error al volver atrás después de la ruta:", e)
+                        print("Error al volver atrás después de la ruta:", e)
 
                 # al terminar rutas de la zona, volver atrás a la lista de zonas
                 try:
@@ -433,7 +475,87 @@ class Scraper:
 
             print("Procesado completo de la región:", region_name)
         except Exception as e:
+
             print("No se pudo localizar la región", region_name, e)
+
+
+    def process_zone_by_link(self, zone_url: str, region_name: str = "", delay_between_actions: float = 1.2):
+        """
+        Procesa todas las rutas de una zona a partir de su URL directa.
+        - zone_url: URL de la zona (ej: https://www.rutaspirineos.org/rutas/el-ripolles)
+        """
+        try:
+            print(f"Abriendo zona desde URL: {zone_url}")
+            self.driver.get(zone_url)
+            time.sleep(2)
+
+            # Extraer nombre de la zona de la URL si es necesario
+            zone_name = zone_url.split('/')[-1].replace('-', ' ').title()
+            print(f"Procesando zona: {zone_name}")
+
+            # Esperar y obtener rutas de la zona
+            routes_selector = "a.content_ruta_zona"
+            try:
+                self.wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, routes_selector)))
+                route_elements = self.driver.find_elements(By.CSS_SELECTOR, routes_selector)
+            except Exception:
+                route_elements = []
+
+            print(f"Encontradas {len(route_elements)} rutas en zona '{zone_name}'")
+
+            # Recorrer rutas
+            for ri in range(len(route_elements)):
+                try:
+                    self.wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, routes_selector)))
+                    route_elements = self.driver.find_elements(By.CSS_SELECTOR, routes_selector)
+                except Exception:
+                    route_elements = []
+
+                if ri >= len(route_elements):
+                    break
+
+                route_el = route_elements[ri]
+                route_title = route_el.text.strip()
+                norm_title = self._norm(route_title)
+                route_href = route_el.get_attribute("href") or ""
+                if "rutas-guiadas" in route_href.lower():
+                    print(f"  [SKIP GUIADA] {route_title} -> {route_href}")
+                    continue
+
+                print(f"  Abriendo ruta {ri+1}/{len(route_elements)}: {route_title}")
+
+                self._click(route_el)
+                time.sleep(delay_between_actions)
+
+                # Extraer detalles de la ruta
+                route_data = self.get_route_details(route_title)
+                if route_data:
+                    # Buscar y descargar PDF
+                    pdf_btn = self.wait_for_pdf_button(timeout=6)
+                    pdf_path = ""
+                    if pdf_btn:
+                        pdf_path = self.download_pdf(pdf_button=pdf_btn, wait_after_click=0.6)
+                        if pdf_path:
+                            route_data["Pdf_path"] = pdf_path
+                        else:
+                            print(f"Falló la descarga del PDF para: {route_title}")
+                    else:
+                        print(f"Botón PDF no encontrado para: {route_title}")
+
+                    # Guardar en CSV
+                    self.save_route_to_csv(route_data, "rutas_pirineos.csv")
+
+                # Volver atrás a la página de la zona
+                try:
+                    self.driver.back()
+                    time.sleep(0.5)
+                except Exception as e:
+                    print(f"Error al volver atrás: {e}")
+
+            print(f"Procesado completo de la zona: {zone_name}")
+
+        except Exception as e:
+            print(f"Error procesando zona desde URL: {e}")
 
 
 if __name__ == "__main__":
@@ -441,12 +563,45 @@ if __name__ == "__main__":
     try:
         scraper.start("https://www.rutaspirineos.org/")
         time.sleep(1)
-        #scraper.close_popup()
+        # Gestionar subscripción
         scraper.handle_subscription(subscribe=True, name="Jessica", email="jessicaromero8100@uoc.edu")
         scraper.click_guides_menu()
         time.sleep(3)
         # ejemplo: procesar la región "Aragón" (usa el texto tal cual aparece)
-        scraper.go_to_region_by_name("Aragón", delay_between_actions=1.2)
-        time.sleep(5)
+        # scraper.go_to_region_by_name("Cataluña", delay_between_actions=1.2)
+        # time.sleep(5)
+        # Procesar zona específica desde URL
+        
+        #https://www.rutaspirineos.org/rutas/maresme
+        zone_urls = ['https://www.rutaspirineos.org/rutas/parque-natural-cabeceras-ter-freser',
+                    'https://www.rutaspirineos.org/rutas/parque-natural-de-la-zona-volcanica-de-la-garrotxa',
+                    'https://www.rutaspirineos.org/rutas/parque-natural-de-las-marismas-del-ampurdan',
+                    'https://www.rutaspirineos.org/rutas/parque-natural-de-los-valles-occidentales',
+                    'https://www.rutaspirineos.org/rutas/parque-natural-de-posets-maladeta',
+                    'https://www.rutaspirineos.org/rutas/parc-natural-alt-pirineu',
+                    'https://www.rutaspirineos.org/rutas/parque-natural-del-cabo-de-creus',
+                    'https://www.rutaspirineos.org/rutas/parque-natural-cadi-moixero',
+                    'https://www.rutaspirineos.org/rutas/parque-natural-del-valle-de-sorteny',
+                    'https://www.rutaspirineos.org/rutas/parc-naturel-regional-des-pyrenees-catalanes',
+                    'https://www.rutaspirineos.org/rutas/parc-naturel-regional-des-pyrenees-ariegeoises',
+                    'https://www.rutaspirineos.org/rutas/parque-natural-valle-de-madriu-perafita-claror',
+                    'https://www.rutaspirineos.org/rutas/parque-natural-valles-del-comapedrosa']
+        
+
+        for idx, zone_url in enumerate(zone_urls, start=1):
+            print(f"\n===== [{idx}/{len(zone_urls)}] Procesando zona: {zone_url} =====")
+            try:
+                scraper.process_zone_by_link(
+                    zone_url=zone_url,
+                    region_name="Cataluña",
+                    delay_between_actions=1.0
+                )
+            except Exception as e:
+                print(f"Error procesando {zone_url}: {e}")
+                # continuar con la siguiente sin interrumpir el resto
+                continue
+
+        print("\n Procesamiento de todas las zonas completado.")
+        #time.sleep(5)
     finally:
         scraper.quit()
