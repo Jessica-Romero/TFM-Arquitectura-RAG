@@ -208,3 +208,9 @@ __marimo__/
 
 # carpeta datos local
 data/
+
+# Bases de datos y almacenamiento vectorial
+src/chroma_db/
+*.sqlite3
+*.db
+*.bin
