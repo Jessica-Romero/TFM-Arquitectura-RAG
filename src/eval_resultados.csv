@@ -1,0 +1,653 @@
+﻿id;tipo_pregunta;pregunta;respuesta;Respuesta_generada;Score de similitud (Q-A) promedio;Score medio docs (retriever);Precision;scores_top;Relevancia;Perplejidad;BertScore;Recall@7;Exactitud factual / Fidelidad (0–3);Utilidad / Relevancia (0–3);Fluidez / Calidad del lenguaje (0–2)
+1;Factual simple;¿Cuál es la distancia total de la ruta «Vuelta a las Agujas de Montserrat desde Can Maçana»?;La distancia total de la ruta es de 7 km.;"La distancia total de la ruta «Vuelta a las Agujas de Montserrat desde Can Maçana» es de 7.0 km.
+Más información en el enlace de origen: https://www.rutaspirineos.org/rutas/agulles-frares-encantats-montserrat-can-massana";0.7161436080932617;0.6900841678891864;0.2857142857142857;[0.7094183564186096, 0.7005945444107056, 0.6920623779296875, 0.687718391418457, 0.6830823421478271, 0.6822415590286255, 0.6754716038703918];1;;0.6989591121673584;0.8070175438596491;;;
+2;Factual simple;¿Cuál es el tiempo total efectivo de la ruta circular por la Terreta desde Sapeira?;El tiempo total efectivo de la ruta circular por la Terreta es de 6:10 h.;"El tiempo total efectivo de la ruta circular por la Terreta desde Sapeira es de 6 horas y 10 minutos.
+
+**Ruta:** Ruta circular por la Terreta desde Sapeira
+**Zona:** Conca de Tremp y Terreta
+**Población cercana:** Sapeira
+**Provincia:** Lérida
+**Región:** Cataluña
+
+**Categoría / tipo de ruta:** Paisajes pintorescos, patrimonio histórico, rutas circulares.
+
+**Dificultad:** Notable. Esta calificación se justifica por la distancia total de 15.6 km y un desnivel positivo acumulado de 916.0 m, características que definen excursiones más exigentes.
+
+**Datos técnicos de la ruta:**
+*   **Distancia total:** 15.6 km
+*   **Tiempo total efectivo:** 6:10h (370 minutos)
+*   **Desnivel positivo acumulado:** 916.0 m
+*   **Altitud mínima:** 834.0 m
+*   **Altitud máxima:** 1514.0 m
+*   **Punto de salida/llegada:** Iglesia de Sapeira
+
+La información se extrajo el 11/11/2025. Puede encontrar más detalles en el siguiente enlace: https://www.rutaspirineos.org/rutas/circular-terreta-roureda-aulas-sapeira-castellet.";0.7363856434822083;0.7280280760356358;1.0;[0.769977331161499, 0.7405663728713989, 0.7223609089851379, 0.7198160886764526, 0.7170858979225159, 0.7142884731292725, 0.7121014595031738];1;;0.6425127387046814;0.8070175438596491;;;
+3;Factual simple;¿Qué desnivel positivo tiene la ascensión a la Tossa Plana de Lles desde el Pradell?;La ruta a la Tossa Plana de Lles desde el Pradell tiene un desnivel acumulado positivo de 790 m.;El desnivel positivo de la ascensión a la Tossa Plana de Lles desde el Pradell es de 790 metros.;0.8555477261543274;0.665029261793409;0.2857142857142857;[0.7192846536636353, 0.7179989218711853, 0.6722810864448547, 0.6635317802429199, 0.6304642558097839, 0.6286274194717407, 0.6230167150497437];1;;0.8951440453529358;0.8070175438596491;;;
+4;Factual simple;¿Cuál es la altitud máxima que se alcanza en la etapa 1 del GR 11 entre el Cabo de Creus y el Puerto de la Selva?;La altitud máxima de la etapa 1 del GR 11 es de aproximadamente 190 m.;"La altitud máxima que se alcanza en la etapa 1 del GR 11 entre el Cabo de Creus y el Puerto de la Selva es de 190.0 metros.
+
+**Información de la Ruta:**
+
+*   **Ruta:** GR 11 - Etapa 01: Cabo de Creus - El Puerto de la Selva
+*   **Zona:** Cabo de Creus
+*   **Provincia:** Gerona
+*   **Región:** Cataluña
+*   **País:** España
+*   **Categoría / tipo de ruta:** Rutas por etapas y GRs
+*   **Dificultad:** Notable
+*   **Distancia total:** 15.5 km
+*   **Tiempo total:** 240.0 minutos
+*   **Desnivel positivo acumulado (+):** 550.0 m
+*   **Desnivel negativo acumulado (-):** -565.0 m
+*   **Altitud mínima:** 5.0 m
+*   **Altitud máxima:** 190.0 m
+*   **Fecha de la información:** 11/11/2025
+*   **Más información en el enlace de origen:** https://www.rutaspirineos.org/rutas/gr-11-transpirenaica-etapa-01-cabo-de-creus-puerto-de-la-selva";0.6254795789718628;0.7012925318309239;0.42857142857142855;[0.7287524938583374, 0.7074987292289734, 0.7005547881126404, 0.6987356543540955, 0.6927841901779175, 0.6912723183631897, 0.6894495487213135];1;;0.637988805770874;0.8070175438596491;;;
+5;Factual simple;¿Cuál es la población más cercana a la ruta de la Vuelta al refugio de Comes de Rubió?;La población más cercana es Rubió, en el Pallars Sobirà.;"La población cercana a la ruta de la Vuelta al refugio de Comes de Rubió es Rubió.
+
+Más información en el enlace de origen: https://www.rutaspirineos.org/rutas/estany-davall-volta-comes-de-rubio";0.7228073477745056;0.7379586696624756;1.0;[0.8109391331672668, 0.7355170249938965, 0.7273147106170654, 0.7248466610908508, 0.7236126661300659, 0.722906231880188, 0.7205742597579956];1;;0.6331623792648315;0.8070175438596491;;;
+6;Factual compuesta;¿Cuál es la dificultad y el tiempo total efectivo de la ruta Vuelta a las Agujas de Montserrat desde Can Maçana?;La ruta tiene dificultad Media y un tiempo total efectivo de 3:05 h.;"La dificultad de la ruta Vuelta a las Agujas de Montserrat desde Can Maçana es **media**, y el tiempo total efectivo de la ruta es de **185 minutos**.
+
+**Análisis de la ruta:**
+
+*   **Ruta:** Vuelta a las Agujas de Montserrat desde Can Maçana.
+*   **Zona:** Montserrat.
+*   **Población cercana:** El Bruc.
+*   **Provincia:** Barcelona.
+*   **Región:** Cataluña.
+*   **Categoría / tipo de ruta:** Rutas circulares, paisajes pintorescos, familias y niños.
+*   **Dificultad:** Media.
+*   **Descripción de la dificultad:** Caminatas de distancia y desnivel moderados que no superan los 14 km de largo ni los 600 m de desnivel.
+*   **Distancia total:** 7.0 km.
+*   **Tiempo total (minutos):** 185.0.
+*   **Desnivel positivo acumulado (+):** 500.0 m.
+*   **Altitud mínima en la que empieza la ruta:** 714.0 m.
+*   **Altitud máxima a la que se alcanza en la ruta:** 980.0 m.
+*   **Fecha de la información:** 11/11/2025.
+*   **Punto de salida/llegada:** Aparcamiento Coll Can Maçana.
+
+La ruta se caracteriza por una distancia y desnivel moderados, lo cual se alinea con la descripción de dificultad media. El desnivel positivo acumulado de 500.0 m sobre una distancia de 7.0 km, junto con el tiempo estimado de 185 minutos, indica un recorrido que requiere esfuerzo físico pero es accesible para senderistas con cierta experiencia.
+
+Se recomienda visitar el centro de visitantes del Espacio Natura Montserrat - Coll de Can Maçana para obtener información adicional sobre el macizo.
+
+**Referencia:**
+[1] https://www.rutaspirineos.org/rutas/agulles-frares-encantats-montserrat-can-massana";0.5731889009475708;0.7170712436948504;1.0;[0.7413627505302429, 0.7308259606361389, 0.7255963087081909, 0.7110908031463623, 0.7072436809539795, 0.7024528980255127, 0.7009263038635254];1;;0.6006813645362854;0.8070175438596491;;;
+7;Factual compuesta;Indica la distancia total y el desnivel acumulado de la ruta circular por la Terreta desde Sapeira.;La ruta circular por la Terreta tiene 15.6 km de longitud y un desnivel acumulado positivo de 916 m.;"La ruta circular por la Terreta desde Sapeira tiene una distancia total de 15.6 km y un desnivel positivo acumulado de 916.0 m.
+
+**Ruta:** Ruta circular por la Terreta desde Sapeira
+**Zona:** Conca de Tremp y Terreta
+**Población cercana:** Sapeira
+**Provincia:** Lérida
+**Región:** Cataluña
+
+**Tipo de ruta:** Paisajes pintorescos, patrimonio histórico, rutas circulares.
+
+**Dificultad:** Notable. La descripción de la dificultad indica que son excursiones más exigentes, ya sea por su longitud, desnivel o alguna dificultad técnica específica. En esta ruta, la distancia total es de 15.6 km y el desnivel positivo acumulado asciende a 916.0 m, lo que justifica su categoría de notable. El tiempo estimado para completar la ruta es de 370 minutos (6 horas y 10 minutos). La altitud mínima de inicio es de 834.0 m y la altitud máxima alcanzada es de 1514.0 m.
+
+**Fecha de la información:** 11/11/2025.
+
+**Más información en el enlace de origen:** https://www.rutaspirineos.org/rutas/circular-terreta-roureda-aulas-sapeira-castellet";0.7911683320999146;0.7135086059570312;0.7142857142857143;[0.7624995708465576, 0.7245761156082153, 0.7072327136993408, 0.7070268988609314, 0.7049766778945923, 0.6956913471221924, 0.6925569176673889];1;;0.6666097044944763;0.8070175438596491;;;
+8;Factual compuesta;¿Entre qué altitudes mínima y máxima se desarrolla la ascensión a la Tossa Plana de Lles desde el Pradell?;La ruta se desarrolla aproximadamente entre los 2.115 m de altitud mínima y los 2.905 m de altitud máxima.;"La ascensión a la Tossa Plana de Lles desde el Pradell se desarrolla entre una altitud mínima de 2115.0 m y una altitud máxima de 2905.0 m.
+
+Más información en el enlace de origen: https://www.rutaspirineos.org/rutas/tossa-plana-de-lles-des-del-pradell";0.6129031181335449;0.658689660685403;0.0;[0.6854908466339111, 0.6621123552322388, 0.6605095267295837, 0.658911406993866, 0.6529150009155273, 0.6459946036338806, 0.6448938846588135];0;;0.6645042896270752;0.8070175438596491;;;
+9;Factual compuesta;En la etapa 1 del GR 11 Cabo de Creus - El Puerto de la Selva, ¿cuál es el tiempo total efectivo y el desnivel acumulado positivo y negativo entre el Cabo de Creus y el Puerto de la Selva?;El tiempo total efectivo es de 4:00 h, con un desnivel acumulado positivo de +550 m y desnivel acumulado negativo de -565 m.;En la etapa 1 del GR 11 Cabo de Creus - El Puerto de la Selva, el tiempo total efectivo es de 240 minutos, el desnivel positivo acumulado es de 550 metros y el desnivel negativo acumulado es de -565 metros. [1, 2, 3, 5];0.6618863344192505;0.687299770968301;0.2857142857142857;[0.7270934581756592, 0.7174758315086365, 0.691240131855011, 0.6780340671539307, 0.6692841053009033, 0.6652548909187317, 0.6627159118652344];1;;0.7901303172111511;0.8070175438596491;;;
+10;Factual compuesta;En la ruta de la GR 11 - Etapa 9: Setcases - Santuario de Nuria, ¿cuál es la distancia total y el desnivel positivo aproximado?;La etapa tiene 19.5 km de longitud y un desnivel positivo acumulado de aproximadamente +1.750 m.;"La ruta GR 11 - Etapa 9: Setcases - Santuario de Nuria no se encuentra disponible en el contexto proporcionado.
+
+Sin embargo, para la ruta ""Camino del Portús desde Adons"", la distancia total es de 5.5 km y el desnivel positivo acumulado es de 430.0 m [1]. Para la ruta ""El tranvía de sangre"", la distancia total es de 19.3 km y el desnivel positivo acumulado es de 317.0 m [3]. Para la ruta ""El Montcau (1.056 m) desde el Marquet de les Roques"", la distancia total es de 8.0 km y el desnivel positivo acumulado es de 645.0 m [4].";0.5548365116119385;0.6929285781724113;0.14285714285714285;[0.7045737504959106, 0.6962669491767883, 0.6935116052627563, 0.6915324926376343, 0.6888411641120911, 0.6879406571388245, 0.6878334283828735];1;;0.6926311254501343;0.8070175438596491;;;
+11;Recomendación personalizada;Busco una ruta circular de dificultad baja, de menos de 2 horas y adecuada para hacer con niños. ¿Cuál de las rutas descritas me recomendarías?;Te recomendaría la Aiguaneix de Alinyà, ya que es una ruta circular de dificultad baja, con un tiempo efectivo de 1:15 h y 210 m de desnivel, pensada también como itinerario apto para familias.;"La ruta recomendada que cumple con tus criterios es el **Paseo por el Paraje de Tudela**.
+
+**Ruta:** Paseo por el Paraje de Tudela
+**Zona:** Cabo de Creus
+**Población cercana:** Cadaqués
+**Provincia:** Gerona
+**Región:** Cataluña
+
+*   **Categoría / tipo de ruta:** Paisajes pintorescos, familias y niños.
+*   **Dificultad:** Baja.
+*   **Justificación de la dificultad:** La descripción indica que son paseos cortos, con poco desnivel y sin dificultades, lo que la hace adecuada para hacer con niños.
+*   **Distancia total:** 5.6 km.
+*   **Tiempo total:** 75.0 minutos (1 hora y 15 minutos).
+*   **Desnivel positivo acumulado:** 150.0 m.
+
+Esta ruta es circular, tiene una duración inferior a 2 horas y una dificultad baja, por lo que se ajusta perfectamente a tus requisitos.
+
+Más información en el enlace de origen: https://www.rutaspirineos.org/rutas/paratge-de-tudela-cap-de-creus";0.5748283863067627;0.7185803055763245;1.0;[0.7355220317840576, 0.730773389339447, 0.715696394443512, 0.7137903571128845, 0.7127290964126587, 0.7113714218139648, 0.7101794481277466];1;;0.635718047618866;0.8070175438596491;;;
+12;Recomendación personalizada;Elige una ruta de dificultad notable con uuna distancia menor de 10 km en la zona de Parroquia de Ordino;Te sugiero la ruta Picos de Casamanya desde el collado de Ordino, distancia de 8.7 km y dificultad notable;"No se ha encontrado ninguna ruta de dificultad notable con una distancia menor de 10 km en la zona de la Parroquia de Ordino en el contexto proporcionado. Las rutas disponibles en el contexto con descripciones de dificultad ""Notable"" o ""Alta"" superan los 10 km de distancia.
+
+*   **Ruta Posets (3.375m) por el refugio Ángel Orús:** Categoría de alta montaña, dificultad Alta (F). Distancia: 16.0 km.
+*   **Ruta La Tosa (2.536m) desde Urús:** Categoría de ascensiones media montaña, dificultad Notable. Distancia: 17.3 km.
+*   **Ruta del Valle del Madriu:** Categoría de paisajes pintorescos, patrimonio histórico, lagos, ríos y cascadas, dificultad Notable. Distancia: 22.8 km.";0.6769993901252747;0.715239805834634;0.8571428571428571;[0.7476928234100342, 0.7305771708488464, 0.718619704246521, 0.708454966545105, 0.7018656730651855, 0.7002114057540894, 0.6992568969726562];1;;0.6845189332962036;0.8070175438596491;;;
+13;Recomendación personalizada;Me apetece empezar una gran travesía pirenaica que arranque literalmente tocando el mar en la zona de Alto Ampurdán. ¿Qué ruta de las descritas debería elegir?;Deberías elegir la etapa 1 del GR 11 entre el Cabo de Creus y el Puerto de la Selva, que empieza en la punta del Cabo de Creus, donde los excursionistas incluso suelen tocar el agua del Mediterráneo antes de iniciar la Transpirenaica.;"Para iniciar una gran travesía pirenaica tocando el mar en la zona de Alto Ampurdán, deberá elegir la ruta ""Forau y cascada de Aigualluts"".
+
+**Ruta:** Forau y cascada de Aigualluts
+**Zona:** Valle de Benasque
+**Población cercana:** Benasque
+**Provincia:** Huesca
+**Región:** Aragón
+
+Esta ruta se clasifica como **paisajes pintorescos, familias y niños, rutas circulares**. La dificultad se cataloga como **Media**, justificada por una distancia total de 7.0 km, un tiempo estimado de 180 minutos y un desnivel positivo acumulado de 400.0 m. La descripción de la dificultad señala que son caminatas de distancia y desnivel moderados que no superan los 14 km de largo ni los 600m de desnivel.
+
+La información sobre el punto de inicio/llegada de esta ruta indica ""La Besurta"". Es importante destacar que la descripción de esta ruta no especifica un inicio literalmente tocando el mar en la zona de Alto Ampurdán, sino que su punto de partida es ""La Besurta"", ubicada en el Valle de Benasque, sin información adicional en el contexto proporcionado que conecte con la costa del Alto Ampurdán.
+
+La fecha de la información extraída de esta ruta es 11/11/2025. Más información puede consultarse en el enlace de origen: https://www.rutaspirineos.org/rutas/forau-de-aigualluts-refugio-renclusa-desde-la-besurta.";0.5026297569274902;0.7392904588154384;1.0;[0.7437069416046143, 0.7434797286987305, 0.7411763072013855, 0.7381834387779236, 0.7377686500549316, 0.7356764078140259, 0.7350417375564575];1;;0.6421701908111572;0.8070175438596491;;;
+14;Recomendación personalizada;Busco una etapa muy exigente físicamente para entrenar el desnivel en alta montaña en Andorra. ¿Cuál de las rutas de los documentos usarías para este objetivo?;La mejor opción es la etapa 1 del GRP de Andorra entre Aixovall y el refugio de Claror, que acumula unos +2.200 m de desnivel positivo y supera los 20 km, siendo descrita como físicamente muy exigente.;"Para entrenar el desnivel en alta montaña en Andorra, la ruta más exigente entre las disponibles es el GR 11 - Etapa 15: Encamp - Arans.
+
+Esta ruta, catalogada como de dificultad ""Notable"", presenta las siguientes características técnicas que la hacen adecuada para un entrenamiento de desnivel:
+*   **Distancia total:** 15.5 km.
+*   **Tiempo total estimado:** 285.0 minutos (4 horas y 45 minutos).
+*   **Desnivel positivo acumulado:** 1275.0 metros.
+*   **Desnivel negativo acumulado:** -1190.0 metros.
+
+La descripción de la dificultad la define como ""Excursiones más exigentes o bien porque son más largas o con mayor desnivel o con alguna dificultad concreta"", lo que corrobora su idoneidad para el objetivo propuesto.
+
+La ruta transcurre por la región de la Parroquia de Ordino y es parte de las rutas por etapas y senderos de Gran Recorrido (GR). La altitud máxima que se alcanza en la ruta es de 1983.0 metros.
+
+Para más información, consulte el enlace de origen: https://www.rutaspirineos.org/rutas/gr-11-transpirenaica-etapa-15-encamp-arans.";0.5773420929908752;0.7379830479621887;1.0;[0.7696859836578369, 0.7401412129402161, 0.7378533482551575, 0.7307390570640564, 0.730638861656189, 0.7284815907478333, 0.728341281414032];1;;0.6421568393707275;0.8070175438596491;;;
+15;Itinerario / planificación;¿Según la sección cómo llegar en coche qué salida debo coger para llegar al aparcamiento del Espai Natura Can Maçana si vengo por la autovía A-2?;Debes tomar la salida 570 de la A-2 y seguir las indicaciones hacia «Montserrat / Manresa» por la carretera B-111. Tras unos 3 km, justo antes del collado de Can Maçana, gira a la derecha por el desvío que desciende hasta el aparcamiento del Espai Natura Montserrat - Coll de Can Maçana.;La información sobre cómo llegar en coche al aparcamiento del Espai Natura Can Maçana por la autovía A-2 no está disponible en el contexto proporcionado.;0.44296130537986755;0.6930669886725289;0.2857142857142857;[0.7304253578186035, 0.7077127695083618, 0.6863012313842773, 0.6853394508361816, 0.6845242977142334, 0.6787421703338623, 0.6784236431121826];1;;0.7234230041503906;0.8070175438596491;;;
+16;Itinerario / planificación;Si quiero hacer en un solo día la ruta circular por la Terreta, ¿cuánto tiempo efectivo de marcha necesito y a qué hora recomendarías empezar para terminar antes de las 17:00?;La ruta tiene un tiempo total efectivo de 6:10 h, por lo que, para acabar antes de las 17:00, es recomendable comenzar a caminar hacia las 9:30 como muy tarde, idealmente sobre las 9:00.;"Para realizar la ruta circular por la Terreta, necesitarás un tiempo efectivo de marcha de 3 horas y 25 minutos. Para terminar antes de las 17:00, te recomendamos empezar a las 13:35 como máximo.
+
+**Detalles de la Ruta:**
+
+*   **Ruta:** Itinerario circular de Peralada a Cabanes.
+*   **Zona:** La llanura ampurdanesa.
+*   **Población:** Peralada.
+*   **Provincia:** Gerona.
+*   **Región:** Cataluña.
+*   **Categoría/tipo de ruta:** Patrimonio histórico, rutas circulares.
+*   **Dificultad:** Notable.
+*   **Descripción de la dificultad:** Excursiones más exigentes por su duración o desnivel, o por alguna dificultad concreta.
+*   **Distancia total:** 14.7 km.
+*   **Tiempo total efectivo:** 205.0 minutos (3:25h).
+*   **Desnivel positivo acumulado:** 91.0 m.
+*   **Altitud mínima:** 19.0 m.
+*   **Altitud máxima:** 74.0 m.
+*   **Punto de salida/llegada:** Plaza de la Peixateria.
+*   **Fecha de la información:** 11/11/2025.
+
+Para más información, puedes consultar el enlace de origen: https://www.rutaspirineos.org/rutas/itinerari-circular-de-peralada-a-cabanes.";0.3813026547431946;0.7245951039450509;1.0;[0.731452465057373, 0.7308222651481628, 0.7255403399467468, 0.7251245379447937, 0.7216219902038574, 0.7190478444099426, 0.71855628490448];1;;0.6295011043548584;0.8070175438596491;;;
+17;Itinerario / planificación;Para organizar la primera etapa del GR 11 Cabo de Creus - El Puerto de la Selva, ¿en qué punto se inicia la jornada y dónde puedo alojarme al final de la etapa?;La etapa se inicia en la punta del Cabo de Creus y finaliza en el Puerto de la Selva, donde hay una amplia oferta de alojamientos (hoteles y otros establecimientos) indicada en la guía oficial del municipio.;"Para la primera etapa del GR 11 Cabo de Creus - El Puerto de la Selva, la jornada se inicia en **Cabo de Creus** y finaliza en **El Puerto de la Selva**, donde se puede pernoctar.
+
+**Ruta:** GR 11 - Etapa 01: Cabo de Creus - El Puerto de la Selva
+**Zona:** Cabo de Creus
+**Provincia:** Gerona
+**Región:** Cataluña
+
+**Descripción de la etapa:**
+*   **Distancia total:** 15.5 km
+*   **Tiempo estimado:** 240.0 minutos (4 horas)
+*   **Desnivel positivo acumulado:** 550.0 m
+*   **Desnivel negativo acumulado:** -565.0 m
+*   **Altitud mínima:** 5.0 m
+*   **Altitud máxima:** 190.0 m
+*   **Categoría / tipo de ruta:** Rutas por etapas y senderos de Gran Recorrido (GRs).
+*   **Dificultad:** Notable. Se considera notable por ser una excursión exigente debido a su longitud, desnivel o alguna dificultad técnica concreta.
+
+Esta etapa transcurre por el Parque Natural del Cabo de Creus, permitiendo disfrutar de sus paisajes y tocar el agua del mar en su punto más oriental. La finalización de la etapa en El Puerto de la Selva ofrece la posibilidad de alojamiento en esta población marinera.
+
+Más información disponible en: https://www.rutaspirineos.org/rutas/gr-11-transpirenaica-etapa-01-cabo-de-creus-puerto-de-la-selva";0.5380984544754028;0.709868712084634;0.8571428571428571;[0.735669732093811, 0.7180737257003784, 0.7113912105560303, 0.7034465074539185, 0.7015599608421326, 0.7005912065505981, 0.6983486413955688];1;;0.6365281343460083;0.8070175438596491;;;
+18;Itinerario / planificación;Quiero subir a la Tossa Plana de Lles y luego pasar por el refugio de Cap del Rec el mismo día. ¿Cómo se encadenan los accesos en coche según la descripción?;Desde Martinet tomas la carretera LV-4036 hasta Lles de Cerdanya, continúas hasta la estación de esquí nórdico de Lles y, por la pista sin asfaltar hacia los lagos de la Pera, llegas al refugio del Pradell, punto de inicio de la ascensión. Tras la ruta, desciendes de nuevo por la pista hasta la estación y el refugio de Cap del Rec antes de regresar al valle.;"El contexto proporcionado detalla rutas a la Tossa Plana de Lles [2], pero no especifica un acceso en coche combinado con el refugio de Cap del Rec. La información disponible para la Tossa Plana de Lles [2] indica un punto de partida/llegada en la Cabaña - refugio del Pradell, en Lles de Cerdaña (Lérida), con una altitud mínima de 2115.0 m.
+
+No se dispone de información sobre el acceso en coche al refugio de Cap del Rec ni sobre cómo enlazarlo con el acceso a la Tossa Plana de Lles.
+
+Para obtener más detalles sobre la ruta a la Tossa Plana de Lles, consulte: https://www.rutaspirineos.org/rutas/tossa-plana-de-lles-des-del-pradell.";0.4852330684661865;0.6538106032780239;0.14285714285714285;[0.7110705375671387, 0.699702262878418, 0.6655242443084717, 0.6358803510665894, 0.626771867275238, 0.6203023195266724, 0.6174226403236389];1;;0.6557584404945374;0.8070175438596491;;;
+19;Itinerario / planificación;Voy a hacer la Vuelta al refugio de Comes de Rubió con raquetas de nieve en invierno. ¿Desde qué puerto salgo, cuánto tiempo efectivo se estima y qué alternativa tengo si al regreso voy justo de fuerzas?;La ruta parte del puerto del Cantó, tiene un tiempo total efectivo de unas 3:30 h y, si al regreso vas justo de fuerzas, puedes optar por volver desde el refugio de Comes de Rubió por la misma pista por la que subiste, en lugar de cerrar el circuito por la Serra Seca y el Pla Muntaner.;"La ruta de la Vuelta al refugio de Comes de Rubió con raquetas de nieve se inicia en el **puerto del Canto**. El tiempo total efectivo estimado es de **405 minutos** (6 horas y 45 minutos).
+
+Como alternativa si regresas con pocas fuerzas, existe la opción de comenzar la excursión en el pueblo de **Rubió**, desde donde una pista enlaza más arriba con la pista que parte del puerto del Canto, lo que podría modificar la logística y el tiempo de recorrido.
+
+**Detalles de la ruta:**
+
+*   **Ruta:** Torreta del Orri (2.439m) por las Comes de Rubió.
+*   **Población:** Rubió.
+*   **Provincia:** Lérida.
+*   **Región:** Cataluña.
+*   **Categoría / tipo de ruta:** Raquetas de nieve, ascensiones media montaña.
+*   **Dificultad:** Notable. La descripción indica que son excursiones más exigentes por su longitud (18.0 km) y desnivel (800.0 m).
+*   **Distancia total:** 18.0 km.
+*   **Tiempo total:** 405.0 minutos.
+*   **Desnivel positivo acumulado:** 800.0 m.
+*   **Altitud mínima:** 1648.0 m.
+*   **Altitud máxima:** 2439.0 m.
+*   **Fecha de la información:** 11/11/2025.
+
+Más información en el enlace de origen: https://www.rutaspirineos.org/rutas/torreta-orri-por-comes-de-rubio
+
+**Notas adicionales:**
+Se recomienda hacer la ruta en el sentido descrito en la fuente, ya que el tramo por la cresta y el bosque de lo Feixar es más cómodo de bajada. La pista de acceso desde Rubió al refugio de Comes de Rubió puede estar cerrada en invierno por nieve, siendo recomendable el uso de raquetas.
+
+[1, 2]";0.7352031469345093;0.710060545376369;1.0;[0.7433032989501953, 0.712220311164856, 0.7048588395118713, 0.7045931220054626, 0.7034836411476135, 0.7012407779693604, 0.7007238268852234];1;;0.658271074295044;0.8070175438596491;;;
+20;Condiciones / seguridad;En la ruta de la Vuelta a las Agujas de Montserrat, ¿por qué se insiste en estar atentos en los cruces a pesar de que el itinerario está bien señalizado?;Porque, aunque el recorrido sigue senderos bien señalizados, la guía señala que hay numerosos cruces y desvíos (como el acceso a la Portella o la subida a la Foradada) en los que es fácil equivocarse si no se presta atención.;"La pregunta se refiere a la ruta ""Vuelta a las Agujas de Montserrat"", pero la información proporcionada en el contexto corresponde a la ruta ""Vuelta a la sierra de Freixa desde Llagunes"" y otras rutas distintas.
+
+Dado que no se dispone de información específica sobre la ruta ""Vuelta a las Agujas de Montserrat"" en el contexto proporcionado, no es posible responder por qué se insiste en estar atentos en los cruces a pesar de que el itinerario está bien señalizado.";0.506881058216095;0.6949683938707624;0.14285714285714285;[0.7040621638298035, 0.6975839138031006, 0.6970042586326599, 0.6940497756004333, 0.6914472579956055, 0.691389799118042, 0.6892415881156921];1;;0.7018670439720154;0.8070175438596491;;;
+21;Condiciones / seguridad;En la ficha de la ruta circular por la Terreta, la dificultad aparece como «Notable». ¿A qué se debe principalmente esta dificultad?;La dificultad se considera notable sobre todo por la combinación de la distancia (15,6 km) y el desnivel acumulado positivo de 916 m, que exigen buena forma física aunque el itinerario no tenga pasos técnicos.;La dificultad de la ruta circular por la Terreta, clasificada como «Notable», se debe principalmente a que es una excursión más exigente. Esto se justifica por su **distancia total de 15.6 km**, un **tiempo total estimado de 370 minutos** (6 horas y 10 minutos) y un **desnivel positivo acumulado de 916 metros**. Fuente: [3];0.6396461725234985;0.7095267346927098;0.5714285714285714;[0.731999397277832, 0.7259309887886047, 0.7174400687217712, 0.7076132893562317, 0.6986640095710754, 0.6960248351097107, 0.6890145540237427];1;;0.7319164872169495;0.8070175438596491;;;
+22;Condiciones / seguridad;¿Por qué no se recomienda hacer la primera etapa del GRP de Andorra fuera del verano y principios de otoño si no se tiene experiencia en nieve?;Porque la guía indica que, fuera del verano y principios de otoño, se suele encontrar nieve y hielo en las cotas altas del recorrido, lo que añade riesgos importantes si no se domina el material invernal.;"La información proporcionada no contiene datos sobre el GRP de Andorra ni sobre la primera etapa de dicha ruta. Por lo tanto, no es posible explicar por qué no se recomienda hacerla fuera del verano y principios de otoño si no se tiene experiencia en nieve.
+
+Los datos disponibles corresponden a la ruta ""Itinerario del Rec del Solà"" y a la etapa 15 del GR 11 (Encamp - Arans), y a la ascensión al Pico de Pedrons.
+
+Para la ruta ""Itinerario del Rec del Solà"":
+*   **Ruta:** Itinerario del Rec del Solà
+*   **Zona:** Andorra la Vella
+*   **Población cercana:** Andorra la Vella
+*   **Provincia:** Andorra la Vella
+*   **Región:** Parroquia de Andorra la Vella
+*   **País:** Andorra
+*   **Categoría / tipo de ruta:** Paisajes pintorescos, familias y niños.
+*   **Dificultad:** Baja.
+*   **Descripción de la dificultad:** Paseos cortos, con poco desnivel y sin dificultades.
+*   **Distancia total:** 4.4 km.
+*   **Tiempo total:** 85 minutos (1 hora y 25 minutos).
+*   **Desnivel positivo acumulado:** 50.0 m.
+*   **Altitud mínima:** 1.080 m.
+*   **Altitud máxima:** 1.122 m.
+*   **Fecha de la información:** 11/11/2025.
+*   **Más información:** [https://www.rutaspirineos.org/rutas/rec-del-sola-andorra-la-vella](https://www.rutaspirineos.org/rutas/rec-del-sola-andorra-la-vella)
+
+Para la ruta ""GR 11 - Etapa 15: Encamp - Arans"":
+*   **Ruta:** GR 11 - Etapa 15: Encamp - Arans
+*   **Región:** Parroquia de Ordino
+*   **País:** Andorra
+*   **Categoría / tipo de ruta:** Rutas por etapas y GRs.
+*   **Dificultad:** Notable.
+*   **Descripción de la dificultad:** Excursiones más exigentes o bien porque son más largas o con mayor desnivel o con alguna dificultad concreta.
+*   **Distancia total:** 15.5 km.
+*   **Tiempo total:** 285 minutos (4 horas y 45 minutos).
+*   **Desnivel positivo acumulado:** 1275.0 m.
+*   **Desnivel negativo acumulado:** -1190.0 m.
+*   **Altitud mínima:** 1.270 m.
+*   **Altitud máxima:** 1.983 m.
+*   **Fecha de la información:** 11/11/2025.
+*   **Más información:** [https://www.rutaspirineos.org/rutas/gr-11-transpirenaica-etapa-15-encamp-arans](https://www.rutaspirineos.org/rutas/gr-11-transpirenaica-etapa-15-encamp-arans)
+
+Para la ruta ""Pico de Pedrons (2.715m) desde la frontera Andorra-Francia"":
+*   **Ruta:** Pico de Pedrons (2.715m) desde la frontera Andorra-Francia
+*   **Población cercana:** Porté-Puymorens
+*   **Comarca:** Alta Cerdaña
+*   **Zona:** Porté-Puymorens
+*   **Provincia:** Pirineos Orientales
+*   **Región:** Languedoc-Rosellón
+*   **País:** Francia
+*   **Categoría / tipo de ruta:** Ascendiones alta montaña, raquetas de nieve.
+*   **Dificultad:** Alta (F).
+*   **Descripción de la dificultad:** Rutas de alta montaña en terreno poco abrupto en el que no hay grandes dificultades. Precisa algo de experiencia y de entrenamiento suficiente para este tipo de terrenos. Puede ser necesario usar las manos para guardar el equilibrio en algún momento puntual. Se trata de itinerarios bastante fáciles con pendientes suaves (máximo 30-35°). F (Fácil) es ya un grado de dificultad, no se trata de dificultad 0.
+*   **Distancia total:** 8.0 km.
+*   **Tiempo total:** 225 minutos (3 horas y 45 minutos).
+*   **Desnivel positivo acumulado:** 825.0 m.
+*   **Altitud mínima:** 1.896 m.
+*   **Altitud máxima:** 2.715 m.
+*   **Fecha de la información:** 11/11/2025.
+*   **Más información:** [https://www.rutaspirineos.org/rutas/pico-de-pedrons-desde-la-frontera-andorra-francia](https://www.rutaspirineos.org/rutas/pico-de-pedrons-desde-la-frontera-andorra-francia)";0.500530481338501;0.6848915049007961;0.2857142857142857;[0.7345297336578369, 0.7024766802787781, 0.6980971097946167, 0.6691165566444397, 0.6668602228164673, 0.6644278764724731, 0.6587323546409607];1;;0.5970554351806641;0.8070175438596491;;;
+23;Condiciones / seguridad;En la ascensión a la Tossa Plana de Lles desde el Pradell, ¿qué precauciones relacionadas con el sol y el agua se recomiendan?;Se recomienda llevar crema solar y gorra o sombrero porque gran parte del recorrido discurre por terreno abierto, y también llevar agua suficiente, ya que en la ruta no se encuentra ninguna fuente.;"No se dispone de información específica sobre precauciones relacionadas con el sol y el agua para la ascensión a la Tossa Plana de Lles desde el Pradell en el contexto proporcionado.
+
+Más información en el enlace de origen: https://www.rutaspirineos.org/rutas/tossa-plana-de-lles-des-del-pradell";0.4079087972640991;0.6307627473558698;0.0;[0.693077802658081, 0.6761903166770935, 0.6494746208190918, 0.6143478751182556, 0.5990356206893921, 0.592208743095398, 0.5910042524337769];0;;0.6246081590652466;0.8070175438596491;;;
+24;Condiciones / seguridad;En la Vuelta al refugio de Comes de Rubió, ¿qué hay que tener en cuenta si se hace con raquetas de nieve y no se conoce bien la zona?;"La guía advierte que, en invierno y sin traza previa, especialmente en el Pla Muntaner, hay que estar muy atento para encontrar el sendero que baja al puerto del Cantó, siguiendo los hitos y las marcas amarillas; de lo contrario, es fácil desorientarse.";"Para realizar la ruta ""Torreta del Orri (2.439m) por las Comes de Rubió"" con raquetas de nieve y si no se conoce bien la zona, se deben tener en cuenta los siguientes aspectos:
+
+**Ruta:** Torreta del Orri (2.439m) por las Comes de Rubió
+**Población cercana:** Rubió
+**Comarca:** Pallars Sobirá
+**Región:** Cataluña
+
+**Tipo de ruta:** Raquetas de nieve, ascensiones media montaña.
+
+**Dificultad:** Notable. Esta dificultad se justifica por la longitud de la ruta, que es de 18.0 km, y un desnivel positivo acumulado de 800.0 m. Las ""excursiones más exigentes"" se caracterizan por ser más largas, con mayor desnivel o con alguna dificultad concreta.
+
+**Consideraciones para senderistas con raquetas y sin conocimiento previo de la zona:**
+
+*   **Equipamiento:** Es imprescindible ir con el material y el equipo adecuados para la práctica de senderismo invernal con raquetas de nieve.
+*   **Orientación:** La ruta, si bien no presenta dificultad técnica en la mayor parte del recorrido (se avanza por pistas), incluye un tramo que desciende desde el pico del Orri por la loma de lo Feixar hasta el refugio de Comes de Rubió, que es sin camino. Para garantizar la orientación, se recomienda llevar cartografía específica, como el mapa ""Parc Natural de l'Alt Pirineu. 1:50.000"" de Editorial Alpina o la ""Base Topogràfica de Catalunya 1:25.000"" del Institut Cartogràfic de Catalunya (ICC).
+*   **Tramos:** Se recomienda hacer el recorrido en el sentido descrito en el contexto, ya que es más cómodo realizar el descenso por la cresta y el bosque de lo Feixar (tramo sin camino) que hacerlo en subida.
+*   **Alojamiento:** Existe la opción de pernoctar en el refugio de Comes de Rubió para realizar la ruta tranquilamente en dos días. Se debe consultar las fechas de apertura del refugio ([www.refugicomesderubio.com](http://www.refugicomesderubio.com)).
+
+**Información adicional:**
+
+*   La ruta puede iniciarse en el pueblo de Rubió o en el Puerto del Canto, desde donde parte una pista que enlaza más arriba con la pista de Rubió.
+*   Se puede disfrutar de los bosques de pino y prados nevados al realizar el recorrido en invierno con raquetas. Es una buena oportunidad para iniciarse en el uso de raquetas de nieve.
+
+**Más información en el enlace de origen:** [https://www.rutaspirineos.org/rutas/torreta-orri-por-comes-de-rubio](https://www.rutaspirineos.org/rutas/torreta-orri-por-comes-de-rubio)";0.4512104392051697;0.6884550281933376;0.14285714285714285;[0.7379382252693176, 0.6982811093330383, 0.6861763000488281, 0.6846369504928589, 0.683012843132019, 0.6759008169174194, 0.6532389521598816];1;;0.634943425655365;0.8070175438596491;;;
+25;Localización / orientación;¿Desde qué aparcamiento se inicia la ruta «Vuelta a las Agujas de Montserrat desde Can Maçana»?;La ruta se inicia en el aparcamiento del Espai Natura Montserrat - Coll de Can Maçana.;"La ruta «Vuelta a las Agujas de Montserrat desde Can Maçana» se inicia en el Aparcamiento Coll Can Maçana.
+
+## Descripción de la Ruta: Vuelta a las Agujas de Montserrat desde Can Maçana
+
+**Ruta:** Vuelta a las Agujas de Montserrat desde Can Maçana
+**Zona:** Montserrat
+**Población cercana:** El Bruc
+**Provincia:** Barcelona
+**Región:** Cataluña
+
+### Tipo de Ruta y Dificultad
+
+Esta ruta está clasificada como **circular** y dentro de la categoría de **paisajes pintorescos** y **familias y niños**. La dificultad se considera **Media**, justificada por una distancia total de 7.0 km y un tiempo estimado de 185.0 minutos. El desnivel positivo acumulado es de 500.0 m. Estas características la enmarcan en caminatas de distancia y desnivel moderados que no superan los 14 km de largo ni los 600m de desnivel, lo que la hace accesible para senderistas con un nivel moderado.
+
+### Datos Técnicos
+
+*   **Distancia total:** 7.0 km
+*   **Tiempo total:** 185.0 minutos (aproximadamente 3 horas y 5 minutos)
+*   **Desnivel positivo acumulado (+):** 500.0 m
+*   **Altitud mínima:** 714.0 m
+*   **Altitud máxima:** 980.0 m
+*   **Fecha de la información:** 11/11/2025
+
+### Punto de Inicio
+
+El punto de salida y llegada de esta ruta es el **Aparcamiento Coll Can Maçana**.
+
+### Información Adicional
+
+Se recomienda visitar el centro de visitantes del Espacio Natura Montserrat - Coll de Can Maçana, gestionado por la Fundació Catalunya La Pedrera, donde se puede obtener información detallada sobre los valores naturales y culturales del macizo de Montserrat.
+
+Para más información, puede consultar el enlace de origen: https://www.rutaspirineos.org/rutas/agulles-frares-encantats-montserrat-can-massana";0.6602565050125122;0.7192776458603996;1.0;[0.7595587968826294, 0.7218224406242371, 0.718264102935791, 0.7160288691520691, 0.7102231383323669, 0.7055431604385376, 0.7035030126571655];1;;0.6318717002868652;0.8070175438596491;;;
+26;Localización / orientación;¿Qué pueblo panorámico sirve de punto de inicio y final a la ruta circular por la Terreta?;El punto de inicio y final es el pueblo de Sapeira.;"El pueblo panorámico que sirve de punto de inicio y final a la ruta circular por la Terreta es Sant Llorenç Savall.
+
+**Ruta:** El Montcau (1.056 m) desde el Marquet de les Roques
+**Zona:** Sant Llorenç del Munt i l'Obac - El Cairat
+**Población cercana:** Sant Llorenç Savall
+**Provincia:** Barcelona
+**Región:** Cataluña
+
+**Categoría / tipo de ruta:** Rutas circulares, ascensiones de media montaña, patrimonio histórico.
+
+**Dificultad:** Media.
+La dificultad se justifica por ser una caminata de distancia y desnivel moderados, con una distancia total de 8.0 km y un desnivel positivo acumulado de 645.0 m. El tiempo estimado es de 250.0 minutos.
+
+**Punto de salida/llegada:** Parking Marquet de les Roques.
+
+**Descripción:**
+Esta ruta circular te permitirá ascender al Montcau (1.056 m) partiendo desde el Marquet de les Roques, un edificio emblemático integrado en el entorno. Durante el recorrido, podrás observar formaciones geológicas de conglomerado, descubrir elementos patrimoniales como la cueva Simanya, la fuente del Llor y un horno de cal. La ascensión culmina en la cima del Montcau, desde donde se disfrutan de fantásticas vistas panorámicas. La información para esta ruta fue extraída el 11/11/2025.
+
+Más información en el enlace de origen: https://www.rutaspirineos.org/rutas/montcau-marquet-de-les-roques.";0.5105347037315369;0.740506478718349;1.0;[0.748439371585846, 0.745948314666748, 0.745262861251831, 0.7370799779891968, 0.7367389798164368, 0.7355625033378601, 0.7345133423805237];1;;0.6074146628379822;0.8070175438596491;;;
+27;Localización / orientación;¿Qué punto marca el inicio oficial de la Transpirenaica GR 11 según la etapa Cabo de Creus - Puerto de la Selva?;El inicio oficial está en la punta del Cabo de Creus, donde se sitúa el kilómetro cero del GR 11.;"El inicio oficial de la Transpirenaica GR 11, en la etapa Cabo de Creus - El Puerto de la Selva, se marca en el **Cabo de Creus**.
+
+Para más información: https://www.rutaspirineos.org/rutas/gr-11-transpirenaica-etapa-01-cabo-de-creus-puerto-de-la-selva";0.748482346534729;0.752298389162336;1.0;[0.7801847457885742, 0.7736065983772278, 0.7510145902633667, 0.7492510080337524, 0.7384771704673767, 0.7368994951248169, 0.7366551160812378];1;;0.6857574582099915;0.8070175438596491;;;
+28;Localización / orientación;En la ruta de las Agujas de Montserrat, ¿en qué punto del recorrido enlazas con el PR-C78 que conduce al paso de la Portella?;Se enlaza con el PR-C78 en el desvío del Camino de la Portella, unos metros después del collado de Guirló, donde se toma un sendero a la derecha que se dirige hacia la Portella.;"No se ha encontrado información en el contexto proporcionado que describa el enlace de la Ruta de las Agujas de Montserrat con el PR-C78 que conduce al paso de la Portella. Los datos disponibles corresponden a otras rutas como ""La cueva de Anes desde Prullans"" o ""Cava y Querforadat en la cara norte del Cadí"", entre otras.";0.7420838475227356;0.6685016240392413;0.0;[0.6911141872406006, 0.6726493239402771, 0.6684049963951111, 0.6646356582641602, 0.6640186905860901, 0.6609303951263428, 0.6577581167221069];0;;0.7145363688468933;0.8070175438596491;;;
+29;Localización / orientación;¿Qué puerto de carretera separa el Pallars Sobirá del Alt Urgell y sirve como punto de inicio de la Vuelta al refugio de Comes de Rubió?;El puerto del Cantó.;"El puerto de carretera que separa el Pallars Sobirá del Alt Urgell y sirve como punto de inicio de la Vuelta al refugio de Comes de Rubió es el **Puerto del Cantó**.
+
+Más información en el enlace de origen: https://www.rutaspirineos.org/rutas/vuelta-al-refugio-de-les-comes-de-rubio-desde-port-del-canto";0.7035343647003174;0.7748474989618573;1.0;[0.7903952598571777, 0.7838515043258667, 0.7814769744873047, 0.7796324491500854, 0.7720305919647217, 0.7623925805091858, 0.7541531324386597];1;;0.6313744187355042;0.8070175438596491;;;
+30;Multimodal (basada en imagen);Según el croquis y el perfil de altitud de la ruta de las Agujas de Montserrat, ¿qué punto del itinerario corresponde al tramo de mayor altura?;El punto de mayor altura corresponde al collado de Port, que alcanza aproximadamente los 980 m de altitud.;"La ruta ""Vuelta a las Agujas de Montserrat desde Can Maçana"" alcanza una altitud máxima de 980 metros.
+
+**Análisis de la Ruta: Vuelta a las Agujas de Montserrat desde Can Maçana**
+
+*   **Ruta:** Vuelta a las Agujas de Montserrat desde Can Maçana
+*   **Zona:** Montserrat
+*   **Población cercana:** El Bruc
+*   **Provincia:** Barcelona
+*   **Región:** Cataluña
+
+**Tipo de Ruta:**
+Esta ruta se clasifica como circular y ofrece paisajes pintorescos, siendo adecuada para familias y niños.
+
+**Dificultad y Características Técnicas:**
+La dificultad se describe como ""Media"", lo que se justifica por tratarse de caminatas de distancia y desnivel moderados. Específicamente:
+*   **Distancia total:** 7.0 km
+*   **Tiempo total:** 185 minutos (aproximadamente 3 horas y 5 minutos)
+*   **Desnivel positivo acumulado (+):** 500.0 m
+*   **Altitud mínima:** 714.0 m
+*   **Altitud máxima:** 980.0 m
+
+El punto de inicio y finalización de la ruta se sitúa en el aparcamiento del Coll de Can Maçana. Durante el recorrido, se puede visitar el centro de visitantes del Espacio Natura Montserrat - Coll de Can Maçana para obtener información sobre los valores naturales y culturales del macizo.
+
+**Referencia:** https://www.rutaspirineos.org/rutas/agulles-frares-encantats-montserrat-can-massana";0.4296632409095764;0.7219727805682591;1.0;[0.7405350208282471, 0.7309807538986206, 0.7245384454727173, 0.7172135710716248, 0.7152796983718872, 0.7126433253288269, 0.7126186490058899];1;;0.593488335609436;0.8070175438596491;;;
+31;Multimodal (basada en imagen);En el mapa de la ruta circular por la Terreta, ¿qué punto de paso se sitúa más hacia el este, más cerca de la sierra de Sant Gervàs: el collado de Castellet o la iglesia de Sapeira?;El collado de Castellet se sitúa claramente más hacia el este que la iglesia de Sapeira.;"El collado de Castellet se sitúa más hacia el este, más cerca de la sierra de Sant Gervàs, que la iglesia de Sapeira.
+Más información en el enlace de origen: https://www.rutaspirineos.org/rutas/circular-terreta-roureda-aulas-sapeira-castellet";0.780491292476654;0.7502891847065517;1.0;[0.7724222540855408, 0.7710209488868713, 0.7542637586593628, 0.744594395160675, 0.7378175854682922, 0.7364619970321655, 0.7354433536529541];1;;0.7769096493721008;0.8070175438596491;;;
+32;Multimodal (basada en imagen);Observando los mapas de la etapa 1 del GR 11 Cabo de Creus - El Puerto de la Selva, ¿qué elemento geográfico acompaña buena parte del trazado entre el Cabo de Creus y el Puerto de la Selva: la línea de costa o una cresta de alta montaña?;Buena parte del trazado discurre próximo a la línea de costa mediterránea, no por una cresta de alta montaña.;"Observando el mapa de la etapa 1 del GR 11 Cabo de Creus - El Puerto de la Selva (referencia [4]), el trazado entre el Cabo de Creus y el Puerto de la Selva acompaña la línea de costa.
+
+Para más información, consulte: https://www.rutaspirineos.org/rutas/gr-11-transpirenaica-etapa-01-cabo-de-creus-puerto-de-la-selva";0.4371260106563568;0.7306625161852155;1.0;[0.7466289401054382, 0.745910108089447, 0.7344120740890503, 0.7266473770141602, 0.7230985760688782, 0.7222328186035156, 0.7157077193260193];1;;0.6320687532424927;0.8070175438596491;;;
+33;Multimodal (basada en imagen);Si observas el mapa de la ascensión a la Tossa Plana de Lles desde el Pradell, ¿sobre qué tipo de relieve discurre el tramo final antes de alcanzar la cima: una arista muy afilada o una loma ancha y redondeada?;El tramo final discurre por una loma ancha y redondeada que sube suavemente hasta la cima.;"Si observas los mapas de la ascensión a la Tossa Plana de Lles desde el Pradell (Imágenes 1, 2, 3 y 4), el tramo final antes de alcanzar la cima discurre por una **loma ancha y redondeada**.
+
+**Ruta:** Tossa Plana de Lles (2.905m) desde el Pradell
+**Población cercana:** Lles de Cerdaña
+**Provincia:** Lérida
+**Región:** Cataluña
+
+**Categoría / tipo de ruta:** Ascensión de alta montaña.
+**Dificultad:** Notable.
+**Descripción de la dificultad:** Excursiones más exigentes por su longitud, desnivel o alguna dificultad concreta.
+**Distancia total:** 7.1 km.
+**Tiempo total:** 225 minutos (3 horas y 45 minutos).
+**Desnivel positivo acumulado:** 790 metros.
+**Altitud mínima:** 2115 metros.
+**Altitud máxima:** 2905 metros.
+**Fecha de la información:** 11/11/2025.
+
+Más información disponible en: https://www.rutaspirineos.org/rutas/tossa-plana-de-lles-des-del-pradell";0.5060228109359741;0.689703915800367;0.14285714285714285;[0.7036153078079224, 0.6949825882911682, 0.6925783753395081, 0.6914880871772766, 0.6878830790519714, 0.6869658827781677, 0.6704140901565552];1;;0.6121213436126709;0.8070175438596491;;;
+34;Comparación;Según las fichas, ¿qué ruta tiene mayor distancia total: Terreta (Sapeira) o Comes de Rubió? Indica ambas distancias.;La circular por la Terreta es más larga, con 15,6 km frente a los 11,5 km de la Vuelta al refugio de Comes de Rubió.;"La ruta ""Noguera Pallaresa y Valle de Àssua desde Sort"" tiene una distancia total de 18.7 km. La ruta ""Terreta (Sapeira)"" no se encuentra en los datos proporcionados. Para la ruta ""Comes de Rubió"", no se dispone de información en el contexto proporcionado.
+
+Fuente: https://www.rutaspirineos.org/rutas/sort-rialp-surp-altron-olp-sort";0.4761974811553955;0.687866074698312;0.2857142857142857;[0.7074587941169739, 0.7043150067329407, 0.683910608291626, 0.6838766932487488, 0.6800659894943237, 0.6787775754928589, 0.6766578555107117];1;;0.67885822057724;0.8070175438596491;;;
+35;Comparación;Entre la ruta de las Agujas de Montserrat y en la GR 11 Cabo de Creus - El Puerto de la Selva, ¿cuál es más corta en distancia?;La ruta de las Agujas de Montserrat es más corta, con 7 km frente a los 15,5 km de la primera etapa del GR 11.;"La ruta GR 11 - Etapa 01: Cabo de Creus - El Puerto de la Selva tiene una distancia de 15.5 km.
+
+La ruta Vuelta a las Agujas de Montserrat desde Can Maçana tiene una distancia de 7.0 km.
+
+Por lo tanto, la ruta Vuelta a las Agujas de Montserrat desde Can Maçana es más corta en distancia.
+
+**Detalles de las rutas:**
+
+**Ruta: GR 11 - Etapa 01: Cabo de Creus - El Puerto de la Selva**
+*   **Población cercana:** El Puerto de la Selva
+*   **Provincia:** Gerona
+*   **Región:** Cataluña
+*   **Categoría / tipo de ruta:** Rutas por etapas y GRs
+*   **Dificultad:** Notable. Descripción: Excursiones más exigentes o bien porque son más largas o con mayor desnivel o con alguna dificultad concreta.
+*   **Distancia total:** 15.5 km
+*   **Tiempo total:** 240.0 minutos
+*   **Desnivel positivo acumulado (+):** 550.0 m
+*   **Desnivel negativo acumulado (-):** -565.0 m
+*   **Altitud mínima:** 5.0 m
+*   **Altitud máxima:** 190.0 m
+*   **Fecha de la información:** 11/11/2025
+*   **Más información:** https://www.rutaspirineos.org/rutas/gr-11-transpirenaica-etapa-01-cabo-de-creus-puerto-de-la-selva
+
+**Ruta: Vuelta a las Agujas de Montserrat desde Can Maçana**
+*   **Pueblo:** El Bruc
+*   **Población cercana:** El Bruc
+*   **Provincia:** Barcelona
+*   **Región:** Cataluña
+*   **Categoría / tipo de ruta:** Rutas circulares, paisajes pintorescos, familias y niños
+*   **Dificultad:** Media. Descripción: Caminatas de distancia y desnivel moderados que no superan los 14 km de largo ni los 600m de desnivel.
+*   **Distancia total:** 7.0 km
+*   **Tiempo total:** 185.0 minutos
+*   **Desnivel positivo acumulado (+):** 500.0 m
+*   **Altitud mínima:** 714.0 m
+*   **Altitud máxima:** 980.0 m
+*   **Fecha de la información:** 11/11/2025
+*   **Más información:** https://www.rutaspirineos.org/rutas/agulles-frares-encantats-montserrat-can-massana";0.6380318403244019;0.7413644364901951;1.0;[0.7555370330810547, 0.7476123571395874, 0.7453768253326416, 0.7425570487976074, 0.7392653226852417, 0.7302312254905701, 0.7289712429046631];1;;0.6093190312385559;0.8070175438596491;;;
+36;Comparación;Si buscas una ruta apta para familias con niños, ¿sería más adecuada la Vuelta al refugio de Comes de Rubió o la etapa Aixovall - Refugio de Claror del GRP? ¿Por qué?;Sería más adecuada la Vuelta al refugio de Comes de Rubió, porque tiene dificultad media, un desnivel moderado y está pensada también para raquetas y salidas familiares, mientras que la etapa Aixovall - Refugio de Claror es muy larga y físicamente exigente.;"Para determinar qué ruta sería más adecuada para familias con niños entre la Vuelta al refugio de Comes de Rubió y la etapa Aixovall - Refugio de Claror del GRP, es necesario analizar las características de las rutas disponibles en el contexto. Sin embargo, el contexto proporcionado no incluye información sobre la ruta ""Vuelta al refugio de Comes de Rubió"" ni sobre la etapa ""Aixovall - Refugio de Claror del GRP"".
+
+El contexto sí detalla otras rutas y sus características:
+
+*   **Ruta de las fuentes de Llagunes**: Categorizada como ""familias y niños"", con dificultad ""Baja"", una distancia de 2.7 km, 45 minutos de tiempo total y un desnivel positivo acumulado de 90.0 m. (Fuente: [2])
+*   **Faro de Cala Nans desde Cadaqués**: Categorizada como ""familias y niños"", con dificultad ""Baja"", una distancia de 5.0 km, 80 minutos de tiempo total y un desnivel positivo acumulado de 180.0 m. (Fuente: [3])
+*   **Paseo por San Nicolás de Bujaruelo**: Categorizada como ""familias y niños"", con dificultad ""Baja"", una distancia de 3.4 km, 50 minutos de tiempo total y un desnivel positivo acumulado de 55.0 m. (Fuente: [4])
+*   **Paseo por el Paraje de Tudela**: Categorizada como ""familias y niños"", con dificultad ""Baja"", una distancia de 5.6 km, 75 minutos de tiempo total y un desnivel positivo acumulado de 150.0 m. (Fuente: [5])
+*   **Lagos de Juclar y pico de Escobes**: Categorizada como ""ascensiones alta montaña"", con dificultad ""Alta (PD)"", una distancia de 13.7 km, 345 minutos de tiempo total y un desnivel positivo acumulado de 1030.0 m. La descripción de la dificultad menciona ""rutas de alta montaña con trepadas en terreno expuesto y de cierta dificultad"", ""aristas y crestas estrechas y aéreas"" y la posible necesidad de cuerda. (Fuente: [1])
+
+Basándonos en las rutas detalladas en el contexto, las rutas de ""familias y niños"" (Ruta de las fuentes de Llagunes, Faro de Cala Nans desde Cadaqués, Paseo por San Nicolás de Bujaruelo y Paseo por el Paraje de Tudela) son significativamente más adecuadas para familias con niños que la ruta ""Lagos de Juclar y pico de Escobes"", debido a su baja dificultad, menor distancia y desnivel.
+
+**Por lo tanto, sin información sobre la Vuelta al refugio de Comes de Rubió ni la etapa Aixovall - Refugio de Claror del GRP, no es posible determinar cuál de ellas sería más adecuada.** No obstante, si se comparan con las rutas de ""familias y niños"" disponibles en el contexto, estas últimas son las opciones recomendadas para senderistas con niños.";0.5869589447975159;0.6880124722208295;0.2857142857142857;[0.7211534976959229, 0.7014665603637695, 0.6913637518882751, 0.6846563220024109, 0.6801815032958984, 0.6701420545578003, 0.6671236157417297];1;;0.6619468331336975;0.8070175438596491;;;
+37;Comparación;Según las descripciones, ¿qué itinerario está más expuesto al sol, la etapa 1 del GR 11 en el Cabo de Creus o la Vuelta a las Agujas de Montserrat?;La etapa 1 del GR 11 está más expuesta al sol, ya que la guía indica que el recorrido tiene muy pocas sombras, mientras que la ruta de las Agujas alterna solana y umbría con tramos de bosque.;El contexto proporcionado no contiene información sobre la exposición al sol de la etapa 1 del GR 11 en el Cabo de Creus ni de la Vuelta a las Agujas de Montserrat. Por lo tanto, no es posible determinar qué itinerario está más expuesto al sol basándose en los datos disponibles.;0.6750884056091309;0.7017848406519208;0.5714285714285714;[0.7093039751052856, 0.7092477083206177, 0.7006425857543945, 0.7005019187927246, 0.6997155547142029, 0.6975060701370239, 0.6955760717391968];1;;0.7323533892631531;0.8070175438596491;;;
+38;Contexto amplio;¿Por qué la Terreta ha quedado históricamente aislada y poco poblada según la introducción de la ruta circular desde Sapeira?;Porque se sitúa a caballo entre varias comarcas pero lejos de sus principales centros administrativos y, además, sus tierras son pobres, lo que ha provocado aislamiento económico y un despoblamiento progresivo del valle.;"La introducción de la ruta circular desde Sapeira no proporciona información sobre por qué la Terreta ha quedado históricamente aislada y poco poblada. La descripción de esta ruta se centra en el territorio salvaje y solitario de la Terreta y en el descubrimiento de los riscos de Castellet y el robledal de Aulàs.
+
+Para más detalles sobre esta ruta, consulte: https://www.rutaspirineos.org/rutas/circular-terreta-roureda-aulas-sapeira-castellet";0.3191162943840027;0.7469754048756191;1.0;[0.7678395509719849, 0.7673989534378052, 0.7600688338279724, 0.7374852895736694, 0.7374091148376465, 0.729742705821991, 0.7288833856582642];1;;0.6147317886352539;0.8070175438596491;;;
+39;Contexto amplio;¿Qué papel ha tenido el contrabando en los caminos que pasan por los puertos de Setut y Perafita vinculados a la zona de la Tossa Plana de Lles?;Durante los años de la posguerra española, muchos «paquetaires» utilizaron los puertos de Setut y Perafita para transportar tabaco y otros productos desde Andorra hacia el interior, convirtiendo estos caminos de la Tossa Plana de Lles en rutas clásicas de contrabando.;No se dispone de información sobre el papel que ha tenido el contrabando en los caminos que pasan por los puertos de Setut y Perafita vinculados a la zona de la Tossa Plana de Lles en el contexto proporcionado. Los datos disponibles se centran en la descripción de rutas de montaña y sus características técnicas.;0.6518062949180603;0.6698364445141384;0.0;[0.6982518434524536, 0.6736537218093872, 0.6690950393676758, 0.669094443321228, 0.6639264822006226, 0.6591305136680603, 0.655703067779541];0;;0.7378465533256531;0.8070175438596491;;;
+40;Contexto amplio;En la etapa del GRP - Etapa 1: Aixovall - Refugio de Claror, ¿qué importancia patrimonial tiene el valle de Claror y el vecino valle de Madriu donde se encuentra el refugio de Claror?;La guía indica que el valle de Claror, junto con el valle de Madriu, está declarado patrimonio de la humanidad por la UNESCO en la categoría de paisaje cultural, por su gran valor natural y humano.;"No se dispone de información patrimonial específica sobre el valle de Claror o el valle de Madriu en el contexto proporcionado. El contexto hace referencia a la ""Ruta: Itinerario del Valle del Madriu"" (datos [3]), que describe la ruta como de categoría ""patrimonio histórico"", sin embargo, no detalla la importancia patrimonial de los valles en sí.";0.7505325078964233;0.7207201378686088;1.0;[0.7350718975067139, 0.7311662435531616, 0.7305156588554382, 0.7151811122894287, 0.7119148969650269, 0.7115675806999207, 0.7096235752105713];1;;0.7355920076370239;0.8070175438596491;;;
+41;Contexto amplio;En la ruta de las Agujas de Montserrat, ¿qué valores naturales y culturales del macizo se destacan en la introducción y la información adicional?;Se destaca que la ruta transcurre dentro del Parque Natural de la Montaña de Montserrat y del Geoparque Mundial UNESCO de la Cataluña Central, y se menciona su singular relieve de agujas conglomeradas, bosques y canales, así como el contexto histórico de las batallas del tamborilero del Bruc.;"En la ruta ""Vuelta a las Agujas de Montserrat desde Can Maçana"", los valores naturales y culturales del macizo que se destacan en la introducción y la información adicional se centran en la posibilidad de obtener información detallada en el centro de visitantes del Espacio Natura Montserrat - Coll de Can Maçana. Este centro, gestionado por la Fundació Catalunya La Pedrera, proporciona información exhaustiva sobre los aspectos naturales y culturales del macizo de Montserrat.
+
+**Información de la ruta:**
+*   **Ruta:** Vuelta a las Agujas de Montserrat desde Can Maçana
+*   **Zona:** Montserrat
+*   **Población cercana:** El Bruc
+*   **Provincia:** Barcelona
+*   **Región:** Cataluña
+*   **Categoría / tipo de ruta:** rutas circulares, paisajes pintorescos, familias y niños
+*   **Distancia total:** 7.0 km
+*   **Tiempo total:** 185.0 minutos
+*   **Desnivel positivo acumulado (+):** 500.0 m
+*   **Fecha de la información:** 11/11/2025
+*   **Más información:** https://www.rutaspirineos.org/rutas/agulles-frares-encantats-montserrat-can-massana";0.5228518843650818;0.7174584780420575;0.42857142857142855;[0.8185539841651917, 0.7128587961196899, 0.7036792039871216, 0.6983594298362732, 0.6979249715805054, 0.6974393129348755, 0.6933936476707458];1;;0.616689920425415;0.8070175438596491;;;
+42;Contexto amplio;Según la introducción de la etapa GR 11 Cabo de Creus - El Puerto de la Selva, ¿por qué se considera el Cabo de Creus una de las grandes joyas del Pirineo catalán?;Porque es el lugar donde los Pirineos se funden con el mar Mediterráneo, creando un paraje de gran singularidad y belleza moldeado durante millones de años por el agua y la tramontana.;"El Cabo de Creus es considerado una de las grandes joyas del Pirineo catalán debido a sus ""paisajes mágicos"", tal como se menciona en la introducción de la etapa GR 11 Cabo de Creus - El Puerto de la Selva. La información adicional se puede consultar en: https://www.rutaspirineos.org/rutas/gr-11-transpirenaica-etapa-01-cabo-de-creus-puerto-de-la-selva.";0.5306070446968079;0.7331167800085885;1.0;[0.7571923732757568, 0.7516602873802185, 0.736602246761322, 0.7261661291122437, 0.7212730646133423, 0.720553994178772, 0.7183693647384644];1;;0.6091764569282532;0.8070175438596491;;;
+43;Opinión / valoraciones;Si tuvieras que destacar un único atractivo principal de la ruta de las Agujas de Montserrat, ¿cuál sería según la sección «Lo mejor de esta ruta»?;Uno de los atractivos principales que destaca la guía es superar el paso de la Portella, la puerta de entrada natural al macizo de Montserrat.;"El único atractivo principal de la ruta de las Agujas de Montserrat, según la sección «Lo mejor de esta ruta», es **visitar el centro de visitantes del Espacio Natura Montserrat - Coll de Can Maçana**.
+
+Fuente: [3]";0.6047309041023254;0.6974771363394601;0.2857142857142857;[0.709750235080719, 0.7026466131210327, 0.6990782618522644, 0.6980005502700806, 0.6957268118858337, 0.6914234161376953, 0.685714066028595];1;;0.7167778611183167;0.8070175438596491;;;
+44;Opinión / valoraciones;Según la descripción, ¿qué hace especialmente cautivadora la ruta circular por la Terreta desde Sapeira?;La hace cautivadora la combinación de un territorio salvaje y solitario, las grandes vistas panorámicas, las paredes calizas y de conglomerado, la presencia de numerosas aves rapaces y el paso por el robledal de Aulàs.;"La ruta circular por la Terreta desde Sapeira resulta cautivadora por ofrecer un itinerario por un territorio salvaje y solitario, permitiendo el descubrimiento de los riscos de Castellet y el robledal de Aulàs.
+
+**Ruta:** Ruta circular por la Terreta desde Sapeira
+**Zona:** Conca de Tremp y Terreta
+**Población cercana:** Sapeira
+**Provincia:** Lérida
+**Región:** Cataluña
+
+**Categoría / tipo de ruta:** Paisajes pintorescos, patrimonio histórico, rutas circulares.
+
+**Dificultad:** Notable. Esta calificación se justifica por ser una excursión exigente debido a su distancia (15.6 km), desnivel positivo acumulado (916.0 m) y el tiempo total estimado (370.0 minutos).
+
+**Información adicional:**
+*   **Altitud mínima:** 834.0 m
+*   **Altitud máxima:** 1514.0 m
+*   **Punto de salida/llegada:** Iglesia de Sapeira
+*   **Fecha de la información:** 11/11/2025
+*   **Más información:** [https://www.rutaspirineos.org/rutas/circular-terreta-roureda-aulas-sapeira-castellet](https://www.rutaspirineos.org/rutas/circular-terreta-roureda-aulas-sapeira-castellet)";0.4940120279788971;0.7362738762583051;1.0;[0.7755284309387207, 0.7444348931312561, 0.7389637231826782, 0.7273216843605042, 0.7267055511474609, 0.7259849309921265, 0.7149779200553894];1;;0.6253942847251892;0.8070175438596491;;;
+45;Opinión / valoraciones;¿Qué elemento convierte la primera etapa del GR 11 Cabo de Creus - El Puerto de la Selva en una forma ideal de empezar la Transpirenaica para muchos excursionistas?;Que es una etapa sin grandes dificultades técnicas, que permite familiarizarse con las marcas blancas y rojas del GR 11, con el uso de mapas y GPS y con el material de travesía mientras se camina por los paisajes mágicos del Parque Natural del Cabo de Creus.;"La primera etapa del GR 11, ""Cabo de Creus - El Puerto de la Selva"", constituye una excelente introducción a la Transpirenaica para muchos excursionistas debido a que permite tocar el agua del mar en la punta del Cabo de Creus y descubrir los paisajes del Parque Natural del Cabo de Creus, finalizando en la población marinera de El Puerto de la Selva.
+
+**Ruta:** GR 11 - Etapa 01: Cabo de Creus - El Puerto de la Selva
+**Zona:** Cabo de Creus
+**Provincia:** Gerona
+**Región:** Cataluña
+**Categoría / tipo de ruta:** rutas por etapas y GRs
+**Dificultad:** Notable
+**Distancia total:** 15.5 km
+**Tiempo total:** 240 minutos
+**Desnivel positivo acumulado:** 550.0 m
+**Desnivel negativo acumulado:** -565.0 m
+**Altitud mínima:** 5.0 m
+**Altitud máxima:** 190.0 m
+**Fecha de la información:** 11/11/2025
+**Más información:** https://www.rutaspirineos.org/rutas/gr-11-transpirenaica-etapa-01-cabo-de-creus-puerto-de-la-selva";0.5174630880355835;0.710126485143389;0.7142857142857143;[0.7507890462875366, 0.7109404802322388, 0.7079534530639648, 0.7040802240371704, 0.7013031840324402, 0.6981285810470581, 0.6976904273033142];1;;0.6345125436782837;0.8070175438596491;;;
+46;Opinión / valoraciones;¿Por qué la ascensión a la Tossa Plana de Lles se considera una excelente opción para iniciarse en las ascensiones de alta montaña?;Porque la guía indica que la dificultad técnica es nula, el acceso al punto de inicio es sencillo y la cima ofrece unas vistas amplísimas de valles y cumbres pirenaicas.;"La ascensión a la Tossa Plana de Lles (2.905m) no se considera una opción para iniciarse en ascensiones de alta montaña según la información proporcionada.
+
+**Ruta:** Tossa Plana de Lles (2.905m) desde el Pradell
+**Población cercana:** Lles de Cerdaña
+**Provincia:** Lérida
+**Región:** Cataluña
+**Categoría / tipo de ruta:** ascensiones alta montana
+**Dificultad (texto original):** Notable
+**Descripción de la dificultad (útil para justificar la categoría):** Excursiones más exigentes o bien porque son más largas o con mayor desnivel o con alguna dificultad concreta.
+**Distancia total:** 7.1 km
+**Tiempo total (minutos):** 225.0
+**Desnivel positivo acumulado (+):** 790.0 m
+**Altitud mínima en la que empieza la ruta:** 2115.0 m
+**Altitud máxima a la que se alcanza en la ruta:** 2905.0 m
+**Fecha de la información extraida de la ruta:** 11/11/2025
+**Más información en el enlace de origen:** https://www.rutaspirineos.org/rutas/tossa-plana-de-lles-des-del-pradell";0.46010881662368774;0.6638887184006828;0.0;[0.6750092506408691, 0.6742353439331055, 0.6634014844894409, 0.6612005829811096, 0.661098837852478, 0.6580559015274048, 0.6542196273803711];0;;0.5967358350753784;0.8070175438596491;;;
+47;Opinión / valoraciones;¿Qué aspectos hacen especialmente agradable la Vuelta al refugio de Comes de Rubió para una salida tranquila en el Parc Natural de l’Alt Pirineu?;La ruta combina una distancia y desnivel moderados con el paso por bosques de pino negro, el entorno acogedor del refugio de Comes de Rubió y el amplio Pla Muntaner, y además puede recorrerse con raquetas en invierno, lo que la hace muy versátil.;"La Vuelta al refugio de Comes de Rubió, en el Parc Natural de l’Alt Pirineu, es especialmente agradable para una salida tranquila debido a su baja dificultad. Esto se justifica por ser un paseo corto de 4.2 km, con un tiempo estimado de 120 minutos y un desnivel positivo acumulado de solo 125 metros. La descripción de la dificultad indica que presenta paseos cortos, con poco desnivel y sin dificultades, lo que la hace apta para familias y niños. La ruta discurre por el entorno del refugio Comes de Rubió, en la comarca del Pallars Sobirá, provincia de Lérida.
+
+Más información en el enlace de origen: https://www.rutaspirineos.org/rutas/estany-davall-volta-comes-de-rubio";0.6129603385925293;0.7107046927724566;1.0;[0.7271803617477417, 0.713701605796814, 0.7128484845161438, 0.7101273536682129, 0.7063964009284973, 0.7030239701271057, 0.7016546726226807];1;;0.6734076142311096;0.8070175438596491;;;
+48;Procedimental;Describe los pasos principales para llegar desde el aparcamiento de Can Maçana hasta el refugio Vicenç Barbé siguiendo la ruta propuesta.;"Desde el aparcamiento de Can Maçana se sigue el GR 172 hasta el collado de Guirló; allí se toma el Camino de la Portella por el PR-C78, se supera la estrecha canal de la Portella entre la Roca Gran y la Roca Petita y, una vez en el interior del macizo, se flanquean varias canales hasta alcanzar el rellano donde se encuentra el refugio Vicenç Barbé.";"La información proporcionada no detalla los pasos principales para llegar desde el aparcamiento de Can Maçana hasta el refugio Vicenç Barbé. La ruta descrita en el contexto [1] es ""El Castanyer Gros de Can Cuch y el pantano de Vallforners"", con punto de salida/llegada en el ""Aparcamiento de Vallforners"", y no menciona el refugio Vicenç Barbé ni el aparcamiento de Can Maçana.";0.6234424114227295;0.6983515620231628;0.14285714285714285;[0.715798556804657, 0.699349582195282, 0.6977643966674805, 0.6961221694946289, 0.6949470043182373, 0.6930244565010071, 0.6914547681808472];1;;0.7013425827026367;0.8070175438596491;;;
+49;Procedimental;¿Cómo se desarrolla la subida inicial desde la iglesia de Sapeira hasta la cota 1.422 m en la ruta circular por la Terreta?;Desde la iglesia de Sapeira se baja por las calles hacia el E, se pasa por el Portal y la capilla de la Creu, se toma el antiguo camino del collado de Castellet, se entra en el barranco de Caranill y, tras una fuerte subida por lo Grauet y el bosque de Sapeira, se alcanza la cresta en la cota 1.422 m.;"La subida inicial desde la Iglesia de Sapeira hasta la cota 1.422 m, en el contexto de la ruta circular por la Terreta, implica un desnivel positivo acumulado de **581 metros** (1.422 m - 834 m, la altitud mínima de la ruta, asumiendo que la subida inicial se dirige hacia puntos más altos dentro del recorrido global).
+
+Ruta: Ruta circular por la Terreta desde Sapeira
+Población cercana: Sapeira
+Provincia: Lérida
+Región: Cataluña
+
+**Explicación de la subida inicial:**
+
+La ruta comienza en la **Iglesia de Sapeira**, situada a una altitud de **834 metros**. Desde este punto de partida, la ruta inicia su ascenso hacia la cota de **1.422 metros**. Este tramo inicial de la ruta, que asciende desde los 834 metros hasta los 1.422 metros, representa un desnivel positivo de **588 metros** (1.422 m - 834 m).
+
+El contexto proporcionado indica que la altitud máxima alcanzada en la ruta es de **1.514 metros**. Por lo tanto, la subida hasta la cota de 1.422 metros constituye una parte significativa del desnivel total de la ascensión, que se extiende hasta el punto más alto de la ruta.
+
+La ruta tiene una **distancia total de 15.6 km**, un **tiempo estimado de 370 minutos** y un **desnivel positivo acumulado de 916 metros**. La dificultad se cataloga como ""Notable"", justificada por ser una excursión exigente debido a su longitud, desnivel y posibles dificultades concretas del terreno.
+
+Más información en el enlace de origen: https://www.rutaspirineos.org/rutas/circular-terreta-roureda-aulas-sapeira-castellet";0.6601607799530029;0.6873200535774231;0.0;[0.6961572170257568, 0.6939072608947754, 0.6931062936782837, 0.6903203129768372, 0.6805230975151062, 0.6791170835494995, 0.6781091094017029];0;;0.6376078128814697;0.8070175438596491;;;
+50;Procedimental;Enumera los pasos del inicio de la etapa 1 de GR 11 Cabo de Creus - El Puerto de la Selva desde la punta del Cabo de Creus hasta el Mas dels Rabassers de Dalt.;Se empieza en la punta del Cabo de Creus, se vuelve al faro siguiendo el sendero, se rodea el faro y se baja a la carretera, que se cruza varias veces siguiendo las marcas del GR 11, hasta dejarla definitivamente y pasar primero por el Mas dels Rabassers de Baix y luego por el Mas dels Rabassers de Dalt.;"Los pasos del inicio de la etapa 1 del GR 11, desde la punta del Cabo de Creus hasta el Mas dels Rabassers de Dalt, son los siguientes:
+
+1.  **Inicio en la Punta del Cabo de Creus:** Se inicia la etapa en la punta del Cabo de Creus, punto que marca el extremo oriental de la Península Ibérica y el inicio (o final) de la Transpirenaica.
+2.  **Descenso a la Punta del Cabo de Creus:** Para llegar a la punta, desde el faro del Cabo de Creus se sigue un sendero que desciende entre las rocas, con una duración aproximada de 10 minutos.
+3.  **Marca del GR 11:** Un círculo blanco con un punto rojo indica el extremo oriental del GR 11.
+4.  **Posible descenso a la orilla del mar:** Muchos excursionistas optan por bajar unos metros más hasta la orilla del mar para remojarse las manos en el Mediterráneo o recoger agua.
+5.  **Regreso al Faro del Cabo de Creus:** Desde la punta del Cabo de Creus, se deshace el camino para volver al faro del Cabo de Creus. Este trayecto dura aproximadamente 12 minutos y se contabiliza como 80 metros recorridos en este tramo inicial.
+6.  **Rodeo del Faro:** Se rodea el faro por su lado sur.
+
+**Información adicional de la ruta:**
+
+*   **Ruta:** GR 11 - Etapa 01: Cabo de Creus - El Puerto de la Selva
+*   **Comarca:** Alto Ampurdán
+*   **Zona:** Cabo de Creus
+*   **Provincia:** Gerona
+*   **Región:** Cataluña
+*   **País:** España
+*   **Categoría / tipo de ruta:** Rutas por etapas y GRs
+*   **Dificultad:** Notable (Excursiones más exigentes por longitud, desnivel o alguna dificultad concreta).
+*   **Distancia total:** 15.5 km
+*   **Tiempo total:** 240.0 minutos
+*   **Desnivel positivo acumulado:** 550.0 m
+*   **Desnivel negativo acumulado:** -565.0 m
+*   **Altitud mínima de inicio:** 5.0 m
+*   **Altitud máxima alcanzada:** 190.0 m
+*   **Fecha de la información:** 11/11/2025
+*   **Más información:** https://www.rutaspirineos.org/rutas/gr-11-transpirenaica-etapa-01-cabo-de-creus-puerto-de-la-selva
+
+Este inicio de etapa permite disfrutar de los paisajes del Parque Natural del Cabo de Creus.";0.7649417519569397;0.7049994468688965;0.42857142857142855;[0.7516075372695923, 0.7013917565345764, 0.7003427147865295, 0.699445366859436, 0.698378324508667, 0.6937891840934753, 0.6900412440299988];1;;0.6554869413375854;0.8070175438596491;;;
+51;Procedimental;Resume el tramo desde el refugio de Pimes hasta la cima del pico Negre de Claror en la etapa del GRP - Etapa 1: Aixovall - Refugio de Claror .;"Desde el refugio libre de Pimes se sigue la pista que atraviesa grandes prados donde pastan vacas y caballos, se superan varios cruces siguiendo siempre las marcas del GRP y, a medida que se gana altura, los prados dan paso a un terreno de pizarras negras y rojizas; tras unas últimas rampas más fuertes se alcanza la cima del pico Negre de Claror.";"No dispongo de información sobre el tramo desde el refugio de Pimes hasta la cima del pico Negre de Claror en la etapa del GRP - Etapa 1: Aixovall - Refugio de Claror.
+
+La información proporcionada en el contexto se refiere a rutas en Sallent de Gállego, Alins, Eriste, Cauterets y La Coma y la Pedra.";0.6850425004959106;0.6840331384113857;0.14285714285714285;[0.7014714479446411, 0.6952760815620422, 0.687157154083252, 0.6790661811828613, 0.6763385534286499, 0.674903392791748, 0.6740191578865051];1;;0.6990857124328613;0.8070175438596491;;;
+52;Procedimental;¿Cómo se realiza el cierre del circuito en la Vuelta al refugio de Comes de Rubió desde el Pla Muntaner hasta el puerto del Cantó?;Desde el Pla Muntaner se cruza el llano en dirección suroeste, se toma el sendero señalizado con marcas amarillas y algunos hitos que se adentra en el bosque entre el Tossal y los Collets y se descienden unos 330 m de desnivel hasta llegar de nuevo al puerto del Cantó, punto de inicio de la ruta.;"La ""Vuelta al refugio de Comes de Rubió"" es una ruta circular con salida y llegada en el Puerto del Cantó. El itinerario recomendado para el cierre del circuito, desde el Pla Muntaner hasta el Puerto del Cantó, se realiza en aproximadamente 1 hora de tiempo efectivo de marcha. Esta sección, junto con el tramo de subida al refugio y el trayecto entre el refugio y el Pla Muntaner, completa un recorrido total de 10.9 km con un desnivel positivo acumulado de 400 m. La dificultad de esta ruta se considera media, descrita como caminatas de distancia y desnivel moderados que no superan los 14 km ni los 600 m de desnivel.
+
+La información detallada de esta ruta se puede consultar en el siguiente enlace: https://www.rutaspirineos.org/rutas/vuelta-al-refugio-de-les-comes-de-rubio-desde-port-del-canto.
+
+**Datos técnicos de la ruta:**
+
+*   **Ruta:** Vuelta al refugio de Comes de Rubió
+*   **Población cercana:** Rubió
+*   **Punto de salida/llegada:** Puerto del Cantó
+*   **Comarca:** Pallars Sobirá
+*   **Zona:** Valle de Siarb
+*   **Provincia:** Lérida
+*   **Región:** Cataluña
+*   **Categoría / tipo de ruta:** familias y ninos, rutas circulares, raquetas de nieve
+*   **Dificultad:** Media
+*   **Distancia total:** 10.9 km
+*   **Tiempo total (sin paradas):** 3:30 h (dividido en: 1:30 h hasta el refugio, 1:00 h entre refugio y Pla Muntaner, 1:00 h de bajada al Puerto del Cantó)
+*   **Desnivel positivo acumulado:** 400.0 m
+*   **Altitud mínima:** 1.7 m (Este dato parece ser un error de transcripción, dado el contexto de montaña. La altitud máxima es de 2052.0 m.)
+*   **Altitud máxima:** 2052.0 m
+*   **Fecha de la información:** 11/11/2025";0.5546256303787231;0.6445395435605731;0.0;[0.6699246764183044, 0.649734616279602, 0.6482275724411011, 0.6418967843055725, 0.6416651606559753, 0.6313301920890808, 0.628997802734375];0;;0.6215035915374756;0.8070175438596491;;;
+53;Pregunta ambigua;¿Cuánto se tarda en hacer la ruta?;La pregunta es ambigua porque no especifica de qué ruta se trata.;"El tiempo estimado para completar la Ruta Voramera y Vía Verde en Amer es de 135 minutos.
+
+Para más información, consulta el enlace de origen: https://www.rutaspirineos.org/rutas/ruta-de-voramea-via-verda-carrilet-amer";0.5637409687042236;0.6936030302728925;0.2857142857142857;[0.7358579635620117, 0.7016912698745728, 0.6941245198249817, 0.6890923976898193, 0.6821979284286499, 0.679354190826416, 0.6729029417037964];1;;0.575505793094635;0.8070175438596491;;;
+54;Pregunta ambigua;¿Dónde empieza el camino?;No se puede responder con precisión sin saber a qué itinerario te refieres, ya que cada ruta tiene un punto de inicio distinto.;"La ruta ""Camino del Portús desde Adons"" comienza en Adons. La altitud mínima de inicio de la ruta es de 1319.0 m.
+
+**Ruta:** Camino del Portús desde Adons
+**Zona:** Pont de Suert y valle de Viu
+**Población cercana:** Adons
+**Provincia:** Lérida
+**Región:** Cataluña
+
+**Categoría / tipo de ruta:** Paisajes pintorescos, familias y niños.
+**Dificultad:** Media.
+**Descripción de la dificultad:** Caminatas de distancia y desnivel moderados que no superan los 14 km de largo ni los 600m de desnivel.
+**Distancia total:** 5.5 km
+**Tiempo total:** 130.0 minutos
+**Desnivel positivo acumulado (+):** 430.0 m
+**Altitud mínima de inicio:** 1319.0 m
+**Altitud máxima alcanzada:** 1.69 m
+
+**Fecha de la información:** 11/11/2025
+
+**Más información:** https://www.rutaspirineos.org/rutas/camino-del-portus-desde-adons";0.4306027889251709;0.6450508236885071;0.0;[0.6745511293411255, 0.6667520403862, 0.6649990081787109, 0.6449429988861084, 0.6238245368003845, 0.6225289106369019, 0.6177571415901184];0;;0.5607445240020752;0.8070175438596491;;;
+55;Pregunta ambigua;¿Es una ruta difícil?;La dificultad depende de la ruta concreta: algunas se califican como Media o Notable. Sin saber de qué recorrido hablas, no se puede valorar su dificultad.;"La ""Ruta de las ermitas de Lloret de Mar"" se clasifica como una ruta de patrimonio histórico, circular, y con elementos de lagos, ríos y cascadas. Su dificultad es **Notable**.
+
+Esta categoría de dificultad se justifica por ser una excursión exigente debido a su longitud, el desnivel acumulado o la presencia de alguna dificultad concreta.
+
+Detalles técnicos de la ruta:
+*   **Distancia total:** 19.0 km
+*   **Tiempo total estimado:** 300.0 minutos (5.0 horas)
+*   **Desnivel positivo acumulado:** 270.0 m
+*   **Altitud mínima:** 4.0 m
+*   **Altitud máxima:** 156.0 m
+
+La información fue extraída el 11/11/2025. Más detalles disponibles en: https://www.rutaspirineos.org/rutas/ruta-de-les-ermites-lloret-de-mar.
+
+Las imágenes proporcionadas muestran el paisaje costero de Lloret de Mar y algunas de las construcciones históricas y elementos arquitectónicos encontrados en la ruta.";0.4396720826625824;0.6182171787534442;0.0;[0.690463662147522, 0.6115966439247131, 0.6115519404411316, 0.6086422801017761, 0.6022859811782837, 0.6015780568122864, 0.601401686668396];0;;0.6327369213104248;0.8070175438596491;;;
+56;Pregunta ambigua;¿Hay animales para ver?;En varias rutas se mencionan animales, como buitres, pero la pregunta no indica qué itinerario te interesa, así que la respuesta exacta depende de la ruta concreta.;"La **Ruta de la fauna de Senet** ([1]) está categorizada como una ruta de flora y fauna, y su descripción indica que es apta para familias y niños. Específicamente, se menciona la posibilidad de conocer la flora y la fauna del macizo de Marimanya en la ruta del **Lago de Baciver desde el Pla de Beret** ([3]), así como la de observar la fauna y la flora de alta montaña del Parque Nacional de Aigüestortes y Estany de Sant Maurici en la ruta de los **Lagos del Pessó desde el puente de la Ribera** ([4]). La **Ruta de la fauna de Senet** se encuentra en la comarca de la Alta Ribagorza, en Lérida.
+
+La ruta **Itinerario de la Nutria en Martinet** ([2]), ubicada en la Cerdaña (Lérida), también está clasificada como flora y fauna, y es de dificultad baja.
+
+Por su parte, la ruta del **Lago y pico del Estanyó** ([5]), en Andorra, también incluye ""flora y fauna"" en su categoría, si bien se clasifica como de dificultad alta.";0.6302148103713989;0.6126101783343724;0.0;[0.6755115985870361, 0.6412749290466309, 0.6014195680618286, 0.5971640348434448, 0.5939587950706482, 0.5898154973983765, 0.5891268253326416];0;;0.6246180534362793;0.8070175438596491;;;
+57;Pregunta ambigua;¿Se puede ir en coche?;A todas las rutas se accede en coche hasta un punto cercano, pero sin especificar de qué ruta hablas no se puede detallar el acceso concreto en vehículo.;"La información disponible no especifica si se puede acceder en coche al punto de inicio o a cualquier parte de la ruta. El punto de salida/llegada de la ruta ""Gallina Pelada (2.317m) por Peguera"" es el Collado de la Creu de Fumanya.
+
+Para más información, consulte: https://www.rutaspirineos.org/rutas/gallina-pelada-por-peguera";0.5274766683578491;0.6332585556166512;0.0;[0.6698161363601685, 0.6390335559844971, 0.6386158466339111, 0.6369302272796631, 0.6312931180000305, 0.6115142703056335, 0.605606734752655];0;;0.657844603061676;0.8070175438596491;;;

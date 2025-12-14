@@ -28,7 +28,7 @@ file_type_router = FileTypeRouter(mime_types=["application/pdf", "image/png"])
 final_doc_joiner = DocumentJoiner(sort_by_score=False)
 image_converter = ImageFileToDocument()
 pdf_converter = PyPDFToDocument()
-pdf_splitter = DocumentSplitter(split_by="page", split_length=1)
+pdf_splitter = DocumentSplitter(split_by="page", split_length=1)  
 text_doc_embedder = SentenceTransformersDocumentEmbedder(
     model="sentence-transformers/clip-ViT-L-14", progress_bar=False
 )

@@ -30,7 +30,7 @@ class Scraper:
         options.add_argument("--start-maximized")
         options.add_argument("--disable-extensions")
         # opciones para redirigir descargas automáticas de PDF
-        self.download_dir = os.path.abspath('../download_pdf')
+        self.download_dir = os.path.abspath('../data/rutas_pdf')
         # Crear directorio si no existe
         os.makedirs(self.download_dir, exist_ok=True)
         preferences = {
@@ -519,10 +519,10 @@ class Scraper:
                 norm_title = self._norm(route_title)
                 route_href = route_el.get_attribute("href") or ""
                 if "rutas-guiadas" in route_href.lower():
-                    print(f"  [SKIP GUIADA] {route_title} -> {route_href}")
+                    print(f"[SKIP GUIADA] {route_title} -> {route_href}")
                     continue
 
-                print(f"  Abriendo ruta {ri+1}/{len(route_elements)}: {route_title}")
+                print(f"Abriendo ruta {ri+1}/{len(route_elements)}: {route_title}")
 
                 self._click(route_el)
                 time.sleep(delay_between_actions)
@@ -543,7 +543,7 @@ class Scraper:
                         print(f"Botón PDF no encontrado para: {route_title}")
 
                     # Guardar en CSV
-                    self.save_route_to_csv(route_data, "rutas_pirineos.csv")
+                    self.save_route_to_csv(route_data, "rutas_scraper.csv")
 
                 # Volver atrás a la página de la zona
                 try:
@@ -567,25 +567,10 @@ if __name__ == "__main__":
         scraper.handle_subscription(subscribe=True, name="Jessica", email="jessicaromero8100@uoc.edu")
         scraper.click_guides_menu()
         time.sleep(3)
-        # ejemplo: procesar la región "Aragón" (usa el texto tal cual aparece)
-        # scraper.go_to_region_by_name("Cataluña", delay_between_actions=1.2)
+
         # time.sleep(5)
-        # Procesar zona específica desde URL
-        
-        #https://www.rutaspirineos.org/rutas/maresme
-        zone_urls = ['https://www.rutaspirineos.org/rutas/parque-natural-cabeceras-ter-freser',
-                    'https://www.rutaspirineos.org/rutas/parque-natural-de-la-zona-volcanica-de-la-garrotxa',
-                    'https://www.rutaspirineos.org/rutas/parque-natural-de-las-marismas-del-ampurdan',
-                    'https://www.rutaspirineos.org/rutas/parque-natural-de-los-valles-occidentales',
-                    'https://www.rutaspirineos.org/rutas/parque-natural-de-posets-maladeta',
-                    'https://www.rutaspirineos.org/rutas/parc-natural-alt-pirineu',
-                    'https://www.rutaspirineos.org/rutas/parque-natural-del-cabo-de-creus',
-                    'https://www.rutaspirineos.org/rutas/parque-natural-cadi-moixero',
-                    'https://www.rutaspirineos.org/rutas/parque-natural-del-valle-de-sorteny',
-                    'https://www.rutaspirineos.org/rutas/parc-naturel-regional-des-pyrenees-catalanes',
-                    'https://www.rutaspirineos.org/rutas/parc-naturel-regional-des-pyrenees-ariegeoises',
-                    'https://www.rutaspirineos.org/rutas/parque-natural-valle-de-madriu-perafita-claror',
-                    'https://www.rutaspirineos.org/rutas/parque-natural-valles-del-comapedrosa']
+        # Procesar zona específica desde URL - eliminado la lista al subir el report a github
+        zone_urls = []
         
 
         for idx, zone_url in enumerate(zone_urls, start=1):

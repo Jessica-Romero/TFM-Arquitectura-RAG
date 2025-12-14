@@ -2,9 +2,6 @@ import fitz  # PyMuPDF
 import os
 import pandas as pd
 
-# Ruta del PDF
-# pdf_path = r"c:\users\jessi\onedrive\escritorio\máster-uoc\tfm\tfm-arquitectura-rag\tfm-arquitectura-rag\download_pdf\rutas-pirineos-agulles-frares-encantats-montserrat-can-massana_es.pdf"
-#pdf_path = r"c:\users\jessi\onedrive\escritorio\máster-uoc\tfm\tfm-arquitectura-rag\tfm-arquitectura-rag\download_pdf\rutas-pirineos-aiguaneix-alinya-urgell_es.pdf"
 
 def extraer_imagenes_pdf(file_path: str, output_dir: str = None):
 
@@ -28,7 +25,7 @@ def extraer_imagenes_pdf(file_path: str, output_dir: str = None):
     
     # Guardar CSV de trazabilidad
     df_trazabilidad = pd.DataFrame(trazabilidad)
-    trazabilidad_path = os.path.join(output_dir, ".\\trazabilidad_imagenes.csv")
+    trazabilidad_path = os.path.join(output_dir, ".\\rutas_imagenes.csv")
     df_trazabilidad.to_csv(trazabilidad_path, index=False)
     print(f"\nCSV de trazabilidad guardado en: {trazabilidad_path}")
     
@@ -61,7 +58,7 @@ def procesar_pdf(pdf_path: str, output_dir: str = None):
         page = doc[page_index]
         image_list = page.get_images(full=True)
 
-        print(f"Página {page_index + 1}: {len(image_list)} imagen(es) encontrada(s)")
+        print(f"Página {page_index + 1}: {len(image_list)} imagenes encontradas")
 
         for img in image_list:
             # img = (xref, smask, width, height, bpc, colorspace, alt, name, filter)
@@ -130,7 +127,9 @@ def procesar_pdf(pdf_path: str, output_dir: str = None):
 
         # Patrones que pueden aparecer como título de la sección de waypoints
         patrones_titulo = [
-            "PUNTOS IMPORTANTES DE PASO (WAYPOINTS)"
+            "PUNTOS IMPORTANTES DE PASO (WAYPOINTS)",
+            "LO MEJOR DE ESTA RUTA",
+            "INTRODUCCIÓN"
         ]
 
         for b in blocks:
@@ -181,8 +180,8 @@ def procesar_pdf(pdf_path: str, output_dir: str = None):
 
 if __name__ == "__main__":
     df_trazabilidad = extraer_imagenes_pdf(
-        file_path=r".\rutas_pirineos_limpio_ve2.csv",
-        output_dir=r"..\imagenes_extraidas"
+        file_path=r".\rutas.csv",
+        output_dir=r"..\data\rutas_img"
     )
     print("\nTrazabilidad de imágenes:")
     print(df_trazabilidad)
