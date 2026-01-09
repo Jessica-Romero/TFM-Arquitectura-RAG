@@ -394,13 +394,14 @@ def build_retrieval_pipeline(top_k_text: int = 7) -> Pipeline:
         collection_name=cfg.TEXT_COLLECTION,
         distance_function="cosine",
     )
-
-    text_embedder = MiniLMQueryEmbedder()
-
+ 
     text_retriever = ChromaEmbeddingRetriever(
         document_store=text_store,
         top_k=top_k_text,
     )
+
+    text_embedder = MiniLMQueryEmbedder()
+
 
     pipe = Pipeline()
     pipe.add_component("text_embedder", text_embedder)
@@ -448,7 +449,7 @@ def fetch_images_for_route_ids(route_ids: List[Any], max_images: int = 8) -> Lis
     if len(image_docs) > max_images:
         image_docs = image_docs[:max_images]
 
-    print(f"Imágenes recuperadas por route_id: {len(image_docs)}")
+    #print(f"Imágenes recuperadas por route_id: {len(image_docs)}")
     return image_docs
 
 
@@ -751,7 +752,7 @@ def build_multimodal_parts(
             continue
 
         img_abs = cfg.BASE_DIR / img_rel_path
-        print(img_abs)
+        #print(img_abs)
 
         if not img_abs.exists():
             print(f"Imagen no encontrada en disco: {img_abs}")
@@ -840,6 +841,8 @@ class ChatBotSimple:
         result = self.pipe.run(inputs)
         text_docs = result["text_retriever"]["documents"]
         top_docs = list(text_docs) 
+
+
                 
         # Fallback sin filtros si no hubo resultados
         if not text_docs and filters_dict is not None:
@@ -883,7 +886,14 @@ class ChatBotSimple:
             image_docs = fetch_images_for_route_ids(route_ids, max_images=8)
             if mostrar_info:
                 print(f" Imágenes recuperadas por route_id: {len(image_docs)}")
-            
+
+        # añadido ahora
+        doc_ids = [ (d.meta or {}).get("section_id") for d in text_docs ]
+        route_ids_docs = [ (d.meta or {}).get("route_id") for d in text_docs ]
+        image_ids = [ (d.meta or {}).get("doc_id") for d in image_docs ] 
+        #print(f" Documentos de texto recuperados (section_id): {doc_ids}")
+        #print(f" Route IDs de documentos de texto recuperados: {route_ids_docs}")
+        #print(f" Documentos de imagen recuperados (doc_id): {image_ids}")   
         # 3) Construir partes multimodales
         parts = build_multimodal_parts(
             query=pregunta,
@@ -911,6 +921,9 @@ class ChatBotSimple:
             "scores_topk_sim": sim_scores,          # lista de similitudes (top-k real que tengas en text_docs)
             "avg_score_topk_sim": avg_sim,          # promedio de similitud
             "k_docs_usado": self.top_k_text,
+            "doc_ids": doc_ids,
+            "route_ids_docs": route_ids_docs,
+            "image_ids": image_ids,
         }
 
 def crear_chatbot(verbose: bool = False, top_k_text: int = 7) -> ChatBotSimple:

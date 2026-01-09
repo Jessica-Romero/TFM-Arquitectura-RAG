@@ -41,6 +41,9 @@ def embed_texts_minilm(texts: List[str], model_name: str) -> np.ndarray:
     )
     return emb
 
+def recall_at_k(retrieved_docs, relevant_doc, k=7) -> int:
+    retrieved_topk = retrieved_docs[:k]
+    return int(relevant_doc in retrieved_topk)
 
 def compute_bertscore(candidate: str, reference: str) -> Optional[float]:
     try:
@@ -84,17 +87,23 @@ def eval_one_row(
     relevance_threshold: float,
     embed_model_name: str,
     do_bertscore: bool,
-    do_ppl: bool,
+    route_id: str,
+    document_id: str,
+    type_q: str,
 ) -> Dict[str, Any]:
     out = bot.preguntar(question, mostrar_info=False)
     answer = out.get("respuesta", "")
-    docs = out.get("documentos", []) or []
-
+    docs_ids = out.get("doc_ids", []) or []
+    route_ids_docs = out.get("route_ids_docs", []) or []
+    image_ids = out.get("image_ids", []) or []
     avg_doc_score = out.get("avg_score_topk_sim", None)
-  
+    print(f" Documentos de texto recuperados (section_id): {docs_ids}")
+    print(f" Route IDs de documentos de texto recuperados: {route_ids_docs}")
+    print(f" Documentos de imagen recuperados (doc_id): {image_ids}")
     scores_k = out.get("scores_topk_sim", []) or []
     print(f" avg_doc_score: {avg_doc_score}")
     print(f" scores_k: {scores_k}")
+
     # Relevancia por query: 1 si hay >=1 doc relevante en top-k
     relevant_hits = sum(1 for s in scores_k if s >= relevance_threshold)
     relevance_binary = 1 if relevant_hits >= 1 else 0
@@ -105,20 +114,34 @@ def eval_one_row(
     # Similaridad (Respuesta vs A) usando el mismo embedder
     emb = embed_texts_minilm([answer, reference_answer], embed_model_name)
     sim_q_a = cosine_sim(emb[0], emb[1])
+    print(f"route_id: {route_id}, document_id: {document_id}, type_q: {type_q}")
 
     # Extras opcionales
     bert_f1 = compute_bertscore(answer, reference_answer) if do_bertscore else None
-    #ppl = compute_pseudo_perplexity(answer) if do_ppl else None
+    if type_q == "Multimodal (basada en imagen)":
+        recall = recall_at_k(image_ids, relevant_doc=document_id, k=k)   
+        precision_k = (sum(1 for im in image_ids if im == document_id) / k) if (k and document_id) else 0.0
+    else:
+        recall = recall_at_k(docs_ids, relevant_doc=document_id, k=k)
+        precision_k = (sum(1 for d in docs_ids if d == document_id) / k) if k else 0.0
+        
+    recall_route = recall_at_k(route_ids_docs, relevant_doc=route_id, k=k)
+    precision_route_k = (sum(1 for r in route_ids_docs if r == route_id) / k) if k else 0.0
 
+    print(f" Recall@{k}: {recall}, Recall@{k} (route_id): {recall_route}")
+    print(f" Precision@{k}: {precision_k}, Precision@{k} (route_id): {precision_route_k}")
     return {
         "Respuesta_generada": answer,
         "Score de similitud (Q-A) promedio": sim_q_a,  # respuesta vs A (embeddings)
         f"Score medio docs (retriever)": avg_doc_score,
         f"Precision": precision_k,
+        f"Precision (route_id)": precision_route_k,
         f"scores_top": str(scores_k),
         f"Relevancia": relevance_binary,
         "Perplejidad": None,
         "BertScore": bert_f1,
+        "Recall@k": recall,
+        "Recall@k (route_id)": recall_route,
     }
 
 
@@ -138,7 +161,7 @@ def main():
         raise ValueError("El input debe ser un CSV")
 
     df = pd.read_csv(in_path, sep=";", encoding="utf-8-sig")
-    for col in ["tipo_pregunta", "pregunta", "respuesta"]:
+    for col in ["route_id", "document_id", "tipo_pregunta", "pregunta", "respuesta"]:
         if col not in df.columns:
             raise ValueError(f"Falta columna obligatoria: {col}. Columnas: {list(df.columns)}")
         
@@ -163,24 +186,29 @@ def main():
     for _, r in df.iterrows():
         q = str(r["pregunta"])
         a = str(r["respuesta"])
+        type = str(r["tipo_pregunta"])
+        route_id = int(float(r["route_id"]))
+        document_id = str(r["document_id"])
         rows.append(
             eval_one_row(
                 bot=bot,
                 question=q,
                 reference_answer=a,
+                type_q = type,
                 k=args.k,
                 relevance_threshold=args.thr,
                 embed_model_name=cfg.TEXT_EMBED_MODEL,
                 do_bertscore=args.compute_bertscore,
-                do_ppl=args.compute_ppl,
+                route_id = route_id,
+                document_id = document_id,
             )
         )
 
     met = pd.DataFrame(rows)
 
     # Recall@k global: fracción de queries con >=1 doc relevante en top5
-    recall_at_k = float(met["Relevancia"].mean()) if len(met) else 0.0
-    met[f"Recall@{args.k}"] = recall_at_k
+    #recall_at_k = float(met["Relevancia"].mean()) if len(met) else 0.0
+    #met[f"Recall@{args.k}"] = recall_at_k
 
     out_df = pd.concat([df.reset_index(drop=True), met.reset_index(drop=True)], axis=1)
 
@@ -201,9 +229,6 @@ def main():
         out_df.to_excel(Path(args.output_xlsx), index=False)
 
     print(f"OK -> {out_csv}")
-    if args.output_xlsx:
-        print(f"OK -> {args.output_xlsx}")
-    print(f"Recall@{args.k} (thr={args.thr}): {recall_at_k:.3f}")
 
 
 if __name__ == "__main__":
