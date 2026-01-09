@@ -34,7 +34,7 @@ def chat_interactivo():
             print(f"🤔 Procesando: {query}")
             print("─" * 40)
             
-            resultado = bot.preguntar(query, mostrar_info=True)
+            resultado = bot.preguntar(query, mostrar_info=False)
             
             print("\n" + "🔵" * 30)
             print("RESPUESTA Generada:")
